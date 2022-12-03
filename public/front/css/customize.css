@@ -1,0 +1,40 @@
+/*
+    primary-color: #0065cb;
+    secondry-color: #d84141;
+*/
+
+
+
+
+
+/*=======================================================
+============ Mob Sidebar
+========================================================*/
+.mobile-menu .menu-box{
+    background:  #0065cb !important;
+}
+
+
+
+
+
+
+
+/*=======================================================
+============ Footer
+========================================================*/
+.footer-top .logo-widget .footer-logo .logo{
+    max-width: inherit;
+}
+.footer-top .logo-widget .footer-logo .logo img{
+    width: 280px !important;
+}
+/*=== RESPONSIVE ===*/
+@media only screen and (max-width: 1200px){
+    .menu-area .mobile-nav-toggler {
+        display: block;
+        padding: 15px 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+}
