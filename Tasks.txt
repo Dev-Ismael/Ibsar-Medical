@@ -1,0 +1,25 @@
+
+
+Advanced Tasks:
+=================
+    - Arrange Route Group in Web.php
+    - pusher sockit at add apointment
+    -
+    -
+    -
+    -
+
+
+
+DB Tables:
+===========
+- Appoitment
+- team
+- Service
+- Messeges
+- Appoitment
+- Subscriber
+- Setting
+- Posts
+- Categories
+- Offers

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html dir="rtl">
 
 <head>
 
@@ -17,12 +17,9 @@
 
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link href='{{ asset('front/css/font-awesome-all.css') }}' rel="stylesheet">
@@ -32,6 +29,7 @@
     <link href='{{ asset('front/css/jquery.fancybox.min.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/animate.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/color.css') }}' rel="stylesheet">
+    <link href='{{ asset('front/css/rtl.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/style.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/responsive.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/customize.css') }}' rel="stylesheet">
@@ -41,7 +39,7 @@
 
 </head>
 
-<body>
+<body class="rtl">
     <div id="app" class="boxed_wrapper">
 
 
@@ -53,29 +51,6 @@
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
                         <div class="spinner"></div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="l" class="letters-loading">
-                                l
-                            </span>
-                            <span data-text-preloader="a" class="letters-loading">
-                                a
-                            </span>
-                            <span data-text-preloader="b" class="letters-loading">
-                                b
-                            </span>
-                            <span data-text-preloader="o" class="letters-loading">
-                                o
-                            </span>
-                            <span data-text-preloader="r" class="letters-loading">
-                                r
-                            </span>
-                            <span data-text-preloader="e" class="letters-loading">
-                                e
-                            </span>
-                            <span data-text-preloader="x" class="letters-loading">
-                                x
-                            </span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +89,7 @@
         <!-- main header -->
         <header class="main-header style-four">
             <!-- header-lower -->
-            <div class="header-lower">
+            <div class="header-lower container">
                 <div class="outer-box">
                     <div class="logo-box">
                         <figure class="logo"><a href="/"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo"></a></figure>
@@ -129,36 +104,24 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="{{ route("home") }}">Home</a></li>
-                                    <li><a href="{{ route("about") }}">About</a></li>
-                                    <li class="dropdown"><a href="index.html">Services</a>
+                                    <li><a href="{{ route("home") }}">الرئيسية</a></li>
+                                    <li class="dropdown"><a href="index.html">الخدمات</a>
                                         <ul>
-                                            <li><a href="index.html">Service</a></li>
-                                            <li><a href="index-2.html">Service</a></li>
-                                            <li><a href="index-3.html">Service</a></li>
-                                            <li><a href="index-4.html">Service</a></li>
-                                            <li><a href="index-5.html">Service</a></li>
+                                            <li><a href="index.html">خدمة</a></li>
+                                            <li><a href="index-2.html">خدمة</a></li>
+                                            <li><a href="index-3.html">خدمة</a></li>
+                                            <li><a href="index-4.html">خدمة</a></li>
+                                            <li><a href="index-5.html">خدمة</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="index.html">locations</a>
-                                        <ul>
-                                            <li><a href="index.html">Location</a></li>
-                                            <li><a href="index-2.html">Location</a></li>
-                                            <li><a href="index-3.html">Location</a></li>
-                                            <li><a href="index-4.html">Location</a></li>
-                                            <li><a href="index-5.html">Location</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="{{ route("contact") }}">Contact</a></li>
+                                    <li><a href="{{ route("about") }}">من نحن</a></li>
+                                    <li><a href="{{ route("contact") }}">الطاقم الطبي</a></li>
+                                    <li><a href="{{ route("contact") }}">العروض</a></li>
+                                    <li><a href="{{ route("contact") }}">حجز موعد</a></li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
-                    <ul class="menu-right-content clearfix">
-                        <li class="search-btn">
-                            <button type="button" class="search-toggler"><i class="icon-1"></i></button>
-                        </li>
-                    </ul>
                 </div>
             </div>
 

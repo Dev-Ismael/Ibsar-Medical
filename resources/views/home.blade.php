@@ -5,137 +5,55 @@
 
     <!-- banner-section -->
     <section class="banner-section style-four mt-3" style="background-image: url(front/images/shape/shape-33.png);">
-        <div class="pattern-layer" style="background-image: url(front/images/shape/shape-34.png);"></div>
-        <div class="anim-icon">
-            <div class="anim-icon-1" style="background-image: url(front/images/shape/shape-36.png);"></div>
-            <div class="anim-icon-2" style="background-image: url(front/images/shape/shape-37.png);"></div>
-            <div class="anim-icon-3 rotate-me" style="background-image: url(front/images/shape/shape-38.png);"></div>
-            <div class="anim-icon-4" style="background-image: url(front/images/shape/shape-39.png);"></div>
-        </div>
         <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
+
             <div class="slide-item">
                 <div class="auto-container">
                     <div class="row align-items-center clearfix">
-                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                            <div class="content-box">
-                                <h2>We’re Responsible for The Safety of Cosmetics Testing</h2>
-                                <p>Excepteur sint occaecat cupidatat non proident sunt <br />culpa qui officia deserunt
-                                    mollit.</p>
-                                <div class="btn-box">
-                                    <a href="research.html" class="theme-btn-one">Our Services</a>
-                                    <a href="index-4.html" class="banner-btn">Discover</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                             <div class="image-box">
-                                <div class="shape">
-                                    <div class="shape-1 rotate-me"
-                                        style="background-image: url(front/images/shape/shape-35.png);"></div>
-                                    <div class="shape-2 rotate-me"
-                                        style="background-image: url(front/images/shape/shape-35.png);"></div>
-                                </div>
                                 <figure class="image"><img src="{{ asset('front/images/banner/banner-1.png') }}"
                                         alt="">
                                 </figure>
-                                <div class="text">
-                                    <h3>15</h3>
-                                    <h4>Location Branchs</h4>
-                                </div>
-                                <div class="admin-box">
-                                    <figure class="admin-thumb"><img src="{{ asset('front/images/banner/admin-1.png') }}"
-                                            alt="">
-                                    </figure>
-                                    <h4>600+ Different Tests</h4>
-                                    <p>Experienced professionals</p>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                            <div class="content-box rtl">
+                                <h2 class="cta-section">الابصار الطبية</h2>
+                                <p class="cta-section">نوفر الخدمات الطبية المتميزة للمرضى في مجال طب
+                                    العيون باستقطاب الأطباء ذو الكفاءات العالية واستخدام
+                                    أحدث التقنيات والأجهزة الطبية وفقًا لمعايير الجودة
+                                    العالمية الآمنة للمرضى .</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="slide-item">
                 <div class="auto-container">
                     <div class="row align-items-center clearfix">
-                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                            <div class="content-box">
-                                <h2>We’re Responsible for The Safety of Cosmetics Testing</h2>
-                                <p>Excepteur sint occaecat cupidatat non proident sunt <br />culpa qui officia deserunt
-                                    mollit.</p>
-                                <div class="btn-box">
-                                    <a href="research.html" class="theme-btn-one">Our Services</a>
-                                    <a href="index-4.html" class="banner-btn">Discover</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                             <div class="image-box">
-                                <div class="shape">
-                                    <div class="shape-1 rotate-me"
-                                        style="background-image: url(front/images/shape/shape-35.png);"></div>
-                                    <div class="shape-2 rotate-me"
-                                        style="background-image: url(front/images/shape/shape-35.png);"></div>
-                                </div>
-                                <figure class="image"><img src="{{ asset('front/images/banner/banner-2.png') }}"
+                                <figure class="image"><img src="{{ asset('front/images/banner/banner-1.png') }}"
                                         alt="">
                                 </figure>
-                                <div class="text">
-                                    <h3>15</h3>
-                                    <h4>Location Branchs</h4>
-                                </div>
-                                <div class="admin-box">
-                                    <figure class="admin-thumb"><img src="{{ asset('front/images/banner/admin-1.png') }}"
-                                            alt="">
-                                    </figure>
-                                    <h4>600+ Different Tests</h4>
-                                    <p>Experienced professionals</p>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                            <div class="content-box rtl">
+                                <h2 class="cta-section">الابصار الطبية</h2>
+                                <p class="cta-section">نوفر الخدمات الطبية المتميزة للمرضى في مجال طب
+                                    العيون باستقطاب الأطباء ذو الكفاءات العالية واستخدام
+                                    أحدث التقنيات والأجهزة الطبية وفقًا لمعايير الجودة
+                                    العالمية الآمنة للمرضى .</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slide-item">
-                <div class="auto-container">
-                    <div class="row align-items-center clearfix">
-                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                            <div class="content-box">
-                                <h2>We’re Responsible for The Safety of Cosmetics Testing</h2>
-                                <p>Excepteur sint occaecat cupidatat non proident sunt <br />culpa qui officia deserunt
-                                    mollit.</p>
-                                <div class="btn-box">
-                                    <a href="research.html" class="theme-btn-one">Our Services</a>
-                                    <a href="index-4.html" class="banner-btn">Discover</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                            <div class="image-box">
-                                <div class="shape">
-                                    <div class="shape-1 rotate-me"
-                                        style="background-image: url(front/images/shape/shape-35.png);"></div>
-                                    <div class="shape-2 rotate-me"
-                                        style="background-image: url(front/images/shape/shape-35.png);"></div>
-                                </div>
-                                <figure class="image"><img src="{{ asset('front/images/banner/banner-3.png') }}"
-                                        alt="">
-                                </figure>
-                                <div class="text">
-                                    <h3>15</h3>
-                                    <h4>Location Branchs</h4>
-                                </div>
-                                <div class="admin-box">
-                                    <figure class="admin-thumb"><img src="{{ asset('front/images/banner/admin-1.png') }}"
-                                            alt="">
-                                    </figure>
-                                    <h4>600+ Different Tests</h4>
-                                    <p>Experienced professionals</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
 
         </div>
     </section>
@@ -223,8 +141,6 @@
                     <h2>What Our Patient Say?</h2>
                 </div>
                 <div class="single-item-carousel owl-carousel owl-theme owl-dots-none owl-loaded owl-drag">
-
-
 
                     <div class="owl-stage-outer">
                         <div class="owl-stage"

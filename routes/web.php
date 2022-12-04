@@ -25,4 +25,13 @@ Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])
 
 
 
+/*===========================================================================
+========== Admin Routes =====================================================
+===========================================================================*/
 
+Route::group([ "prefix" => "admin" , "as" => "admin." ] , function(){
+
+    // Dashboard
+    Route::get('/dashboard' , [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
+
+});

@@ -74,13 +74,15 @@ body {
   line-height:26px;
   font-weight:400;
   background:#ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center top;
   -webkit-font-smoothing: antialiased;
 }
-
+p,span,h1,h2,h3,h4,h5,h6{
+    font-family: 'Alexandria', sans-serif;
+}
   @media (min-width:1200px) {
   .container {
     max-width: 1170px;
@@ -135,7 +137,7 @@ a:hover{
 }
 
 input,button,select,textarea{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-weight: 400;
   font-size: 15px;
   background: transparent;
@@ -161,7 +163,7 @@ textarea:focus{
 
 p{
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   color: #848484;
   font-weight: 400;
   margin: 0px;
@@ -384,7 +386,7 @@ img {
   display: inline-block;
   font-size: 14px;
   line-height: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-weight: 700;
   color: #142441 !important;
   background: #f2f3f5;
@@ -842,7 +844,7 @@ img {
   text-align:center;
   font-size:16px;
   line-height:30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-weight:700;
   padding-right: 12px;
   opacity:1;
@@ -971,7 +973,7 @@ img {
   line-height:24px;
   font-weight:600;
   font-size:15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   text-transform:capitalize;
   color:#142441;
   text-align: left;
@@ -1111,7 +1113,7 @@ img {
   line-height:24px;
   font-weight:600;
   font-size:15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   text-transform:capitalize;
   color:#142441;
   text-align: left;
@@ -3190,7 +3192,7 @@ div#mCSB_1_container{
 }
 
 .footer-top .logo-widget .text .info li a{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
 }
 
 .footer-top .logo-widget .text .info li a:hover{
@@ -8238,7 +8240,7 @@ h4 a:hover{
 .education-block-one .inner-box h3 span{
   display: block;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   color: #142441;
   font-weight: 400;
   text-transform: uppercase;
@@ -8360,7 +8362,7 @@ h4 a:hover{
 .awards-section .inner-box .single-item h3 span{
   display: block;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   color: #142441;
   font-weight: 400;
   text-transform: uppercase;
@@ -8867,7 +8869,7 @@ h4 a:hover{
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alexandria', sans-serif;
   color: #93959e;
   border: 1px solid #e5e5e5;
   border-radius: 30px;

@@ -204,6 +204,7 @@
 	// banner-carousel
 	if ($('.banner-carousel').length) {
         $('.banner-carousel').owlCarousel({
+            // rtl:true,
             loop:true,
 			margin:0,
 			nav:true,
