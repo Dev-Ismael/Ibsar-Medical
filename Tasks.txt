@@ -13,7 +13,6 @@ Advanced Tasks:
 
 DB Tables:
 ===========
-- Appoitment
 - team
 - Service
 - Messeges

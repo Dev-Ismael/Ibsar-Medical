@@ -44,8 +44,8 @@
     <!--------- CkEditor 4 -------->
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    {{-- <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
 
 
 </head>
@@ -108,7 +108,7 @@
                         </a>
                     </div>
                 </div>
-                {{-- <ul class="nav flex-column pt-3 pt-md-0">
+                <ul class="nav flex-column pt-3 pt-md-0">
                     <li class="nav-item">
                         <a href="{{ route('home') }}" class="nav-link text-center">
                             <span class="sidebar-icon brand-img"><img src="{{ asset('admin/images/favicon-white.png') }}"
@@ -175,30 +175,12 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a href="{{ route('admin.resource.index') }}"
-                            class="nav-link {{ Request::is('*/resource*') ? 'active' : '' }}">
-                            <span class="sidebar-icon">
-                                <i class="fa-solid fa-book"></i>
-                            </span>
-                            <span class="sidebar-text">Resources</span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
                         <a href="{{ route('admin.member.index') }}"
                             class="nav-link {{ Request::is('*/member*') ? 'active' : '' }}">
                             <span class="sidebar-icon">
                                 <i class="fa-solid fa-users"></i>
                             </span>
                             <span class="sidebar-text">Members</span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="{{ route('admin.tax_center.index') }}"
-                            class="nav-link {{ Request::is('*/tax_center*') ? 'active' : '' }}">
-                            <span class="sidebar-icon">
-                                <i class="fa-solid fa-money-bill-wave"></i>
-                            </span>
-                            <span class="sidebar-text">Tax Center</span>
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -274,7 +256,7 @@
                             <span class="sidebar-text">Settings</span>
                         </a>
                     </li>
-                </ul> --}}
+                </ul>
             </div>
         </nav>
 
