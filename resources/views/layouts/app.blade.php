@@ -15,6 +15,9 @@
     <!-- Fav Icon -->
     <link rel="icon" href='{{ asset('front/images/favicon.png') }}' type="image/x-icon">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,19 +36,19 @@
     <link href='{{ asset('front/css/style.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/responsive.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/customize.css') }}' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.css" integrity="sha512-wT6IDHpm/cyeR3ASxyJSkBHYt9oAvmL7iqbDNcAScLrFQ9yvmDYGPZm01skZ5+n23oKrJFoYgNrlSqLaoHQG9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite([ 'resources/sass/app.scss', 'resources/js/app.js' ])
 
 </head>
 
-<body class="rtl">
+<body class="rtl text-right">
     <div id="app" class="boxed_wrapper">
 
 
-
         <!-- preloader -->
-        <div class="loader-wrap">
+        {{-- <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">Preloader Close</div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -54,7 +57,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- preloader end -->
 
 
@@ -285,7 +288,8 @@
     <script src='{{ asset('front/js/jquery.fancybox.js') }}'></script>
     <script src='{{ asset('front/js/appear.js') }}'></script>
     <script src='{{ asset('front/js/isotope.js') }}'></script>
-    <script src='{{ asset('front/js/jquery.nice-select.min.js') }}'></script>
+    {{-- <script src='{{ asset('front/js/jquery.nice-select.min.js') }}'></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js" integrity="sha512-Y+0b10RbVUTf3Mi0EgJue0FoheNzentTMMIE2OreNbqnUPNbQj8zmjK3fs5D2WhQeGWIem2G2UkKjAL/bJ/UXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src='{{ asset('front/js/nav-tool.js') }}'></script>
     <script src='{{ asset('front/js/jquery.paroller.min.js') }}'></script>
 

@@ -1,0 +1,35 @@
+
+
+
+/*=======================================================
+============ Global Properties
+=======================================================*/
+.form-group {
+    &.booking{
+        display: flex;
+    }
+    .custom-input {
+        background-color: transparent;
+        border-radius: 10px;
+        &::-webkit-input-placeholder {
+            /* Edge */
+            color: #fff;
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer */
+            color: #fff;
+        }
+        &::placeholder {
+            color: #fff;
+        }
+
+    }
+    i{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+

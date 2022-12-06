@@ -44,14 +44,14 @@
     <!--------- CkEditor 4 -------->
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
-    {{-- <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 
 </head>
 
 <body>
-    <div id="admin">
+    <div  id="admin">
 
 
         <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
@@ -62,7 +62,7 @@
 
         <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
             <a class="navbar-brand me-lg-5" href="{{ route('home') }}">
-                <img src="{{ asset('admin/images/logo.png') }}" style="max-width: 150px" alt="Precision Logo">
+
             </a>
             <div class="d-flex align-items-center">
                 <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
@@ -111,11 +111,9 @@
                 <ul class="nav flex-column pt-3 pt-md-0">
                     <li class="nav-item">
                         <a href="{{ route('home') }}" class="nav-link text-center">
-                            <span class="sidebar-icon brand-img"><img src="{{ asset('admin/images/favicon-white.png') }}"
-                                    alt="Precision Logo">
+                            <span class="sidebar-icon brand-img">
                             </span>
-                            <span class="mt-1 sidebar-text">PRESICION  <small
-                                    style="font-size: 0.7rem">INTL</small></span>
+                            <span class="mt-1 sidebar-text">IBSAR Medical </span>
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -173,7 +171,6 @@
                             </ul>
                         </div>
                     </li>
-
                     <li class="nav-item ">
                         <a href="{{ route('admin.member.index') }}"
                             class="nav-link {{ Request::is('*/member*') ? 'active' : '' }}">
@@ -183,7 +180,7 @@
                             <span class="sidebar-text">Members</span>
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item d-none">
                         <a href="{{ route('admin.service.index') }}"
                             class="nav-link {{ Request::is('*/service*') ? 'active' : '' }}">
                             <span class="sidebar-icon">
@@ -192,7 +189,7 @@
                             <span class="sidebar-text">Services</span>
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item d-none">
                         <a href="{{ route('admin.testimonial.index') }}"
                             class="nav-link {{ Request::is('*/testimonial*') ? 'active' : '' }}">
                             <span class="sidebar-icon">
@@ -201,7 +198,7 @@
                             <span class="sidebar-text">Testimonials</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <span class="nav-link d-flex justify-content-between align-items-center collapsed"
                             data-bs-toggle="collapse" data-bs-target="#newsletters" aria-expanded="false">
                             <span>
@@ -247,7 +244,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item d-none">
                         <a href="{{ route('admin.setting.edit') }}"
                             class="nav-link {{ Request::is('*/setting*') ? 'active' : '' }}">
                             <span class="sidebar-icon">

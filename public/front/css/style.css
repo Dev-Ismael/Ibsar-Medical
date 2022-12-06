@@ -81,7 +81,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 p,span,h1,h2,h3,h4,h5,h6{
-    font-family: 'Alexandria', sans-serif;
+    font-family: 'Alexandria', sans-serif !important;
 }
   @media (min-width:1200px) {
   .container {
@@ -2566,9 +2566,7 @@ div#mCSB_1_container{
   box-shadow: 0 10px 30px #e2e8ea;
 }
 
-.testimonial-section .inner-content .sec-title{
-  margin-bottom: 49px;
-}
+
 
 .content_block_3 .content-box{
   position: relative;
@@ -5645,7 +5643,7 @@ h4 a:hover{
   left: 0px;
   top: 0px;
   width: 100%;
-  background: #fff;
+  background: transparent;
   padding: 0px 70px;
 }
 
@@ -5702,7 +5700,8 @@ h4 a:hover{
 
 .banner-section.style-four{
   position: relative;
-  padding: 95px 0px 170px 0px;
+  padding: 95px 0px 0px 0px;
+  background-color: #eff7fa;
 }
 
 .banner-section.style-four .pattern-layer{
@@ -5807,7 +5806,7 @@ h4 a:hover{
 }
 
 .banner-section.style-four .content-box h2{
-  font-size: 60px;
+  font-size: 40px;
   line-height: 66px;
   font-weight: 800;
   margin-bottom: 32px;
