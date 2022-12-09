@@ -125,7 +125,7 @@
                             العالية واستخدام أحدث التقنيات والأجهزة الطبية</p>
                         <hr>
                         <div class="working-hours">
-                            <div class=" rtl row align-items-center h-100">
+                            <div class="rtl row align-items-center h-100">
                                 <div class="col-4">
                                     مواعيد العمل :
                                 </div>
@@ -212,6 +212,88 @@
         </div>
     </section>
     <!-- team Section -->
+
+
+    <!-- Blog Section -->
+    <section class="custom-blog-section">
+        <div class="auto-container">
+            <div class="sec-title centred">
+                <div class=" row align-items-center h-100">
+                    <div class="col-8 text-right">
+                        <h6>المكتبة الطبية</h6>
+                        <p>أحدث المقالات والتقنيات الطبية المتخصصة بالعيون</p>
+                    </div>
+                    <div class="col-4 text-left">
+                        <a href="#" class="theme-btn-one">المزيد</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+
+                <div class="col-md-6 col-sm-12 team-block">
+                    <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="inner-box custom-post big-post bg-style" style="background-image: url(/front/images/team/team-1.jpg)">
+                            <div class="overlay">
+                                <div class="date">
+                                    <p class="day"> 25 </p>
+                                    <p class="month">مايو</p>
+                                </div>
+                                <div class="heading">
+                                    <h3> الماء البيضاء </h3>
+                                    <p> الماء الأبيض (الساد) ويسمى أيضًا (الكتاراكت) وهو عتامة عدسة
+                                        العين أي تعكر في عدسة العين السليمة </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 team-block">
+                    <div class="row">
+
+                        <div class="col-md-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                <div class="inner-box custom-post original-post">
+                                    <div class="row h-100">
+                                        <div class="col-5 bg-style" style="background-image: url(/front/images/team/team-1.jpg)"></div>
+                                        <div class="col-7 d-flex align-items-center">
+                                            <div class="post-content">
+                                                <p class="date"> 2022 ،مايو 29 </p>
+                                                <h6 class="f-bold"> عيون الأطفال و الحول </h6>
+                                                <p> نوفر التشخيص المبكر لعيوب الإبصار عند الأطفال بأحدث
+                                                    التقنيات لعلاج حالات كسل العين و الأمراض الخلقية و </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 team-block" style="margin-top: 40px">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                <div class="inner-box custom-post original-post">
+                                    <div class="row h-100">
+                                        <div class="col-5 bg-style" style="background-image: url(/front/images/team/team-1.jpg)"></div>
+                                        <div class="col-7 d-flex align-items-center">
+                                            <div class="post-content">
+                                                <p class="date"> 2022 ،مايو 29 </p>
+                                                <h6 class="f-bold"> عيون الأطفال و الحول </h6>
+                                                <p> نوفر التشخيص المبكر لعيوب الإبصار عند الأطفال بأحدث
+                                                    التقنيات لعلاج حالات كسل العين و الأمراض الخلقية و </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 </div>
 

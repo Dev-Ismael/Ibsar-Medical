@@ -1,0 +1,39 @@
+.theme-btn-one {
+    border-radius: 10px !important;
+    padding: 12px 25px;
+}
+
+.bg-style {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.font-blue {
+    color: #3387b2 !important;
+}
+
+/*======================================================
+======== Footer
+======================================================*/
+.main-footer {
+    .social-style-one li {
+        float: inherit !important;
+        a {
+            color: #3387b2;
+            border: 1px solid #3387b2;
+            margin: 0px 7px !important;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    hr {
+        width: 70%;
+        margin: 0px auto;
+        height: 2px;
+        background-color: rgb(179, 179, 179);
+        border-radius: 10px;
+    }
+}

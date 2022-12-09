@@ -185,12 +185,6 @@
         <!-- Footer -->
         <footer class="main-footer bg-color-1">
             <div class="footer-top">
-                <div class="shape">
-                    {{-- <div class="shape-1 rotate-me" style="background-image: url(front/images/shape/shape-14.png);"></div>
-                    <div class="shape-2 rotate-me" style="background-image: url(front/images/shape/shape-14.png);"></div> --}}
-                    <div class="shape-3"></div>
-                    <div class="shape-4"></div>
-                </div>
                 <div class="auto-container">
                     <div class="row clearfix">
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
@@ -199,76 +193,89 @@
                                     <figure class="logo"><a href="index.html"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo"></a></figure>
                                 </div>
                                 <div class="text">
-                                    <p>Nostrud exertation ullamco labor aliquip commodo duis.</p>
-                                    <ul class="info clearfix">
-                                        <li><i class="icon-26"></i>Flat 20, Reynolds Neck, <br>FV77 8WS</li>
-                                        <li><i class="icon-24"></i>Call Us: <a href="tel:3336660001">333-666-0001</a></li>
-                                        <li><i class="icon-25"></i><a href="mailto:info@example.com">info@example.com</a></li>
-                                    </ul>
+                                    <p>المملكة العربية السعودية - الرياض حي الملك
+                                        فيصل ، تقاطع طريق الملك عبدالله بن عبدالعزيز
+                                        و شارع الفضول 13</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget post-widget ml-70">
-                                <div class="widget-title">
-                                    <h4>Latest Events</h4>
-                                </div>
-                                <div class="post-inner">
-                                    <div class="post">
-                                        <h5><a href="blog-details.html">A New World View Our Global Impact.</a></h5>
-                                        <span class="post-date">27 May, 2021</span>
-                                    </div>
-                                    <div class="post">
-                                        <h5><a href="blog-details.html">Proper Self-collection of Nasal Swabs.</a></h5>
-                                        <span class="post-date">26 May, 2021</span>
-                                    </div>
-                                    <div class="post">
-                                        <h5><a href="blog-details.html">Evidence Lacking for Widespread Vitamin.</a></h5>
-                                        <span class="post-date">25 May, 2021</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget ml-70">
-                                <div class="widget-title">
-                                    <h4>Usefull Link</h4>
-                                </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index.html">About Company</a></li>
-                                        <li><a href="index.html">Services</a></li>
-                                        <li><a href="index.html">How It Works</a></li>
-                                        <li><a href="index.html">Our Blog</a></li>
-                                        <li><a href="index.html">Contact Us</a></li>
-                                        <li><a href="index.html">Policy</a></li>
+                                        <li><a href="index.html">الرئيسية</a></li>
+                                        <li><a href="index.html">الخدمات</a></li>
+                                        <li><a href="index.html">من نحن</a></li>
+                                        <li><a href="index.html">الطاقم الطبي</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ">
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="index.html">المدونة</a></li>
+                                        <li><a href="index.html">الخدمات</a></li>
+                                        <li><a href="index.html">من نحن</a></li>
+                                        <li><a href="index.html">الاختبارات</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ">
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="index.html">المسؤولية الاجتماعية</a></li>
+                                        <li><a href="index.html">انضم لنا</a></li>
+                                        <li><a href="index.html">حجز موعد</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget subscribe-widget">
                                 <div class="widget-title">
-                                    <h4>Subscribe</h4>
+                                    <h4 class="font-blue">تحميل التطبيق</h4>
                                 </div>
-                                <div class="widget-content">
-                                    <p>Lorem ipsum dlor sit amet, conect adipisicing elit sed do eiusmod.</p>
-                                    <form action="contact.html" method="post" class="subscribe-form">
-                                        <div class="form-group">
-                                            <input type="email" name="email" placeholder="Your Email" required="">
-                                            <button type="submit"><i class="icon-27"></i></button>
-                                        </div>
-                                    </form>
+                                <div class="row align-items-center h-100">
+                                    <div class="col-4">
+                                        <a href="#">
+                                            <img src="{{ asset('front/images/icons/android-icon.png') }}" alt="android-icon" width="64">
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <p>Get It From </p>
+                                        <h4> Playstore </h4>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center h-100 mt-3">
+                                    <div class="col-4">
+                                        <a href="#">
+                                            <img src="{{ asset('front/images/icons/apple-icon.png') }}" alt="apple-icon" width="64">
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <p>Get It From </p>
+                                        <h4> Appstore </h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="footer-bottom centred">
                 <div class="auto-container">
                     <div class="copyright">
-                        <p><a href="index.html">Laborex</a> © 2022 All Right Reserved</p>
+                        <ul class="social-style-one mb-3">
+                            <li><a href="index-3.html"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="index-3.html"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="index-3.html"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <p> © جميع الحقوق محفوظة. الابصار الطبية </p>
                     </div>
                 </div>
             </div>

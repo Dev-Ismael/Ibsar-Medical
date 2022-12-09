@@ -80,7 +80,7 @@ body {
   background-position:center top;
   -webkit-font-smoothing: antialiased;
 }
-p,span,h1,h2,h3,h4,h5,h6{
+p,span,h1,h2,h3,h4,h5,h6,a,button{
     font-family: 'Alexandria', sans-serif !important;
 }
   @media (min-width:1200px) {
@@ -3154,7 +3154,6 @@ div#mCSB_1_container{
 .footer-top{
   position: relative;
   padding: 120px 0px 75px 0px;
-  border-bottom: 1px solid #e3e4e6;
 }
 
 .footer-top .logo-widget .footer-logo{
@@ -3273,7 +3272,9 @@ div#mCSB_1_container{
 
 .footer-top .links-widget .links-list li a{
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0px;
   display: inline-block;
 }
 
