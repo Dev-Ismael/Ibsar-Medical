@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div id="home-page">
 
     <!-- banner-section -->
     <section class="banner-section style-four" >
@@ -100,7 +101,7 @@
                                 <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                                 </span>
-                             </div>
+                            </div>
                             <i class="fa-solid fa-circle-user"></i>
                         </div>
                     </div>
@@ -111,8 +112,7 @@
     </section>
     <!-- End Book Section -->
 
-
-    <!-- testimonial-section -->
+    <!-- Working-Hours section -->
     <section class="testimonial-section sec-pad-2 ltr" style="background-image: url(front/images/background/testimonial-1.jpg);">
         <div class="auto-container">
             <div class="inner-content">
@@ -141,6 +141,78 @@
             </div>
         </div>
     </section>
-    <!-- testimonial-section end -->
+    <!-- Working-Hours section end -->
+
+    <!-- team Section -->
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="sec-title centred">
+                <h6>الطاقم الطبي</h6>
+                <p>لدينا أطباء ذو كفاءة عالية في خدمتك</p>
+            </div>
+
+            <div class="row clearfix">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="inner-box text-center">
+                            <figure class="image-box">
+                                <img src="{{ asset('front/images/team/team-1.jpg') }}" alt="">
+                            </figure>
+                            <div class="lower-content">
+                                <h4><a href="team-details.html">Dr. Antonio Banderas</a></h4>
+                                <span class="designation">PHD Student</span>
+                            </div>
+                            <div class="social-icons">
+                                <ul class="social-style-one clearfix">
+                                    <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="inner-box text-center">
+                            <figure class="image-box">
+                                <img src="{{ asset('front/images/team/team-1.jpg') }}" alt="">
+                            </figure>
+                            <div class="lower-content">
+                                <h4><a href="team-details.html">Dr. Antonio Banderas</a></h4>
+                                <span class="designation">PHD Student</span>
+                            </div>
+                            <div class="social-icons">
+                                <ul class="social-style-one clearfix">
+                                    <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="inner-box text-center">
+                            <figure class="image-box">
+                                <img src="{{ asset('front/images/team/team-1.jpg') }}" alt="">
+                            </figure>
+                            <div class="lower-content">
+                                <h4><a href="team-details.html">Dr. Antonio Banderas</a></h4>
+                                <span class="designation">PHD Student</span>
+                            </div>
+                            <div class="social-icons">
+                                <ul class="social-style-one clearfix">
+                                    <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- team Section -->
+
+</div>
 
 @endsection

@@ -1,16 +1,7 @@
-// Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
-
-// Variables
-@import 'variables';
 
 
 
-// Admin
-@import 'front/front.scss';
+// style.scss
+    @import './front/home.scss';
 
-// Admin
-@import 'admin/admin.scss';
 
-// Bootstrap
-// @import 'bootstrap/scss/bootstrap';
