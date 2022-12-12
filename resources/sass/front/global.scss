@@ -1,7 +1,10 @@
-.theme-btn-one {
-    border-radius: 10px !important;
-    padding: 12px 25px;
+/*======================================================
+======== Global Properties
+======================================================*/
+.section-padding {
+    padding: 150px 0px 150px 0px !important;
 }
+
 
 .bg-style {
     background-repeat: no-repeat;
@@ -10,30 +13,82 @@
 }
 
 .font-blue {
-    color: #3387b2 !important;
+    color: $blue !important;
 }
 
-/*======================================================
-======== Footer
-======================================================*/
-.main-footer {
-    .social-style-one li {
-        float: inherit !important;
-        a {
-            color: #3387b2;
-            border: 1px solid #3387b2;
-            margin: 0px 7px !important;
-            &:hover {
-                color: #fff;
-            }
+// Btn
+.theme-btn-one {
+    border-radius: 10px !important;
+    padding: 12px 40px;
+    &.blue-opcity{
+        background: $blue-opacity;
+    }
+    &.white{
+        background: #fff;
+        color: $blue !important;
+        &:hover{
+            color: #fff !important;
+        }
+    }
+}
+
+// custom Inputs Stlye
+.input__box {
+
+    position: relative;
+
+    .input__icon {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    // Input
+    input,
+    select {
+        width: 100%;
+        padding: 12px 10px 12px 50px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+
+        &::-webkit-input-placeholder {
+            /* Edge */
+            color: rgb(199, 199, 199);
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer */
+            color: rgb(199, 199, 199);
+        }
+
+        &::placeholder {
+            color: rgb(199, 199, 199);
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            outline: none;
+            background-color: transparent !important;
         }
     }
 
-    hr {
-        width: 70%;
-        margin: 0px auto;
-        height: 2px;
-        background-color: rgb(179, 179, 179);
-        border-radius: 10px;
+    select {
+        color: rgb(199, 199, 199);
+        padding: 15px;
     }
+
+    // Date/Time
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator,
+    input[type="time"]::-webkit-inner-spin-button,
+    input[type="time"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
 }

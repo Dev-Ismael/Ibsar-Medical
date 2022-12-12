@@ -36,7 +36,11 @@
     <link href='{{ asset('front/css/style.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/responsive.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/customize.css') }}' rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.css" integrity="sha512-wT6IDHpm/cyeR3ASxyJSkBHYt9oAvmL7iqbDNcAScLrFQ9yvmDYGPZm01skZ5+n23oKrJFoYgNrlSqLaoHQG9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
+
+
 
     <!-- Scripts -->
     @vite([ 'resources/sass/app.scss', 'resources/js/app.js' ])
@@ -177,10 +181,40 @@
         </div>
         <!-- End Mobile Menu -->
 
-
         <main>
             @yield('content')
         </main>
+
+        <!------- NewsLetter  ------->
+        <section class="cta-section">
+            <div class="auto-container">
+                <div class="inner-box clearfix">
+                    <div class="text-center pb-5">
+                        <h5>الاخبار</h5>
+                        <p> اشـترك بـالنشـرة الإخـباريـة </p>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-8 offset-4">
+                                Hello
+                            </div>
+                            {{--
+                                <div class="col-md-6 pull-4">
+                                    <div class="input__box">
+                                        <i class="input__icon fa-solid fa-envelope"></i>
+                                        <input type="text" class="w-100" placeholder="البريد الاليكتروني : *" name="email" autocomplete="nope" />
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="index-3.html" class="theme-btn-one">اشتراك</a>
+                                </div>
+                            --}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
         <footer class="main-footer bg-color-1">
@@ -295,11 +329,16 @@
     <script src='{{ asset('front/js/jquery.fancybox.js') }}'></script>
     <script src='{{ asset('front/js/appear.js') }}'></script>
     <script src='{{ asset('front/js/isotope.js') }}'></script>
-    {{-- <script src='{{ asset('front/js/jquery.nice-select.min.js') }}'></script> --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js" integrity="sha512-Y+0b10RbVUTf3Mi0EgJue0FoheNzentTMMIE2OreNbqnUPNbQj8zmjK3fs5D2WhQeGWIem2G2UkKjAL/bJ/UXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src='{{ asset('front/js/nav-tool.js') }}'></script>
     <script src='{{ asset('front/js/jquery.paroller.min.js') }}'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
+
+    <script type="text/javascript">
+        $(function() {
+            $('#datepicker').datepicker();
+        });
+    </script>
 
     <!-- main-js -->
     <script src='{{ asset('front/js/script.js') }}'></script>

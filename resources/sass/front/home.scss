@@ -3,45 +3,20 @@
 =======================================================*/
 #home-page {
 
-    /* enable absolute positioning */
-    .form-group.booking {
-        display: flex;
+    /*=== Blog Section ===*/
+    .service-custom-section{
 
-        .custom-input {
-            background-color: transparent;
-            border-radius: 10px;
-
-            &::-webkit-input-placeholder {
-                /* Edge */
-                color: rgb(199, 199, 199);
-            }
-
-            &:-ms-input-placeholder {
-                /* Internet Explorer */
-                color: rgb(199, 199, 199);
-            }
-
-            &::placeholder {
-                color: rgb(199, 199, 199);
+        .service-block-one .inner-box.dark{
+            background: $blue;
+            a,h4,p{
+                color: #fff ;
             }
         }
 
-        i {
-            position: absolute;
-            color: #fff;
-            font-size: 24px;
-            left: 10%;
-            top: 15px;
-        }
-
-        input,
-        select {
-            color: #fff;
-            border: 1px solid rgb(211, 211, 211);
-        }
     }
 
 
+    /*=== Testimoinal Section ====*/
     .testimonial-section .inner-content {
 
         h6,
@@ -49,7 +24,7 @@
             color: #fff;
         }
 
-        background-color: #3387b2;
+        background-color: $blue;
         box-shadow: -10px 10px #3388b260;
 
         .sec-title {
@@ -71,14 +46,14 @@
         }
     }
 
-
+    /*==== Team Section ====*/
     .team-section{
         .social-style-one li
         {
             float: inherit;
             a{
                 color: #ffffff;
-                background: #3387b2;
+                background: $blue;
             }
         }
     }
@@ -114,7 +89,7 @@
                 .date{
                     text-align: center;
                     position: absolute;
-                    background-color: #3387b2;
+                    background-color: $blue;
                     padding: 20px 30px;
                     top: 10px;
                     left: 20px;
@@ -139,7 +114,7 @@
             // Original Post
             &.original-post{
                 border-radius: 0px 20px 20px  0px ;
-                border-bottom: 5px solid #3387b2;
+                border-bottom: 5px solid $blue;
                 background-color: #3388b223;
                 width: 100%;
                 height: 280px;
@@ -149,7 +124,7 @@
                         padding: 7px 0px;
                     }
                     .date{
-                        color: #3387b2;
+                        color: $blue;
                     }
 
                 }

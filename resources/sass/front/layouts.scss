@@ -1,0 +1,50 @@
+/*======================================================
+======== NewsLettter
+======================================================*/
+
+.cta-section {
+    .inner-box {
+        h5 {
+            font-size: 26px;
+        }
+        .theme-btn-one {
+            border: 1px solid rgba(255, 255, 255, 0.5) !important;
+            padding: 12px 50px;
+
+            &:hover {
+                border: 1px solid $blue !important;
+            }
+        }
+
+    }
+}
+
+
+
+
+/*======================================================
+======== Footer
+======================================================*/
+.main-footer {
+    .social-style-one li {
+        float: inherit !important;
+
+        a {
+            color: $blue;
+            border: 1px solid $blue;
+            margin: 0px 7px !important;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    hr {
+        width: 70%;
+        margin: 0px auto;
+        height: 2px;
+        background-color: rgb(179, 179, 179);
+        border-radius: 10px;
+    }
+}
