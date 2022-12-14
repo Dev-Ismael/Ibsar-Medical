@@ -22,6 +22,12 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+Route::post('/appointment', [App\Http\Controllers\AppointmentController::class, 'store'])->name('store_appointment');
+
+
+// Route::get('/test', function () {
+//     return view("submission");
+// });
 
 
 
@@ -73,6 +79,14 @@ Route::group([ "prefix" => "admin" , "as" => "admin." ] , function(){
     Route::post('service/multiAction' , [App\Http\Controllers\Admin\ServiceController::class, 'multiAction'])->name("service.multiAction");
     Route::resource('service', App\Http\Controllers\Admin\ServiceController::class);
     Route::get('service/destroy/{id}' , [App\Http\Controllers\Admin\ServiceController::class, 'destroy'] )->name("service.destroy");
+
+
+    // Appointment
+    Route::get('appointment/perPage/{num}' , [App\Http\Controllers\Admin\AppointmentController::class, 'perPage'])->name("appointment.perPage");
+    Route::post('appointment/search' , [App\Http\Controllers\Admin\AppointmentController::class, 'search'])->name("appointment.search");
+    Route::post('appointment/multiAction' , [App\Http\Controllers\Admin\AppointmentController::class, 'multiAction'])->name("appointment.multiAction");
+    Route::resource('appointment', App\Http\Controllers\Admin\AppointmentController::class);
+    Route::get('appointment/destroy/{id}' , [App\Http\Controllers\Admin\AppointmentController::class, 'destroy'] )->name("appointment.destroy");
 
 
     // testimonial

@@ -62,14 +62,16 @@
                 <div class="inner-box clearfix rtl">
                     <h4 class="title text-white">احجز معنا : </h4>
 
-                    <form action="">
+                    <form action="{{ route('store_appointment') }}" method="POST" >
                         <div class="row book-container pt-3">
+
+                            @csrf
 
                             <!----- Name ----->
                             <div class="col-md-4 mt-3">
                                 <div class="input__box">
                                     <i class="input__icon fa-solid fa-circle-user"></i>
-                                    <input type="text" class="w-100" placeholder="الاسم : *" name="email" autocomplete="nope" />
+                                    <input type="text" class="w-100" placeholder="الاسم : *" name="username" autocomplete="nope" value="{{ old('username') }}" minlength="8" maxlength="100" required />
                                 </div>
                             </div>
 
@@ -77,39 +79,45 @@
                             <div class="col-md-4 mt-3">
                                 <div class="input__box">
                                     <i class="input__icon fa-solid fa-phone"></i>
-                                    <input type="text" class="w-100" placeholder="رقم الجوال : *" name="email" autocomplete="nope" />
+                                    <input type="text" class="w-100" placeholder="رقم الجوال : *" name="phone" autocomplete="nope" value="{{ old('phone') }}" minlength="8" maxlength="100" required />
                                 </div>
                             </div>
 
-                            <!----- doctor ----->
+                            <!----- member ----->
                             <div class="col-md-4 mt-3">
                                 <div class="input__box">
-                                    <select name="doctor" id="doctor">
+                                    <select name="member_id" id="member" required>
                                         <option value="" disabled selected hidden>الحجز مع : *</option>
-                                        <option value="">Hello</option>
-                                        <option value="">Hello</option>
+                                        @foreach ( $members as  $member )
+                                            <option value="{{ $member->id }}"
+                                                {{ old('member') == $member->id ? "selected" : "" }} >
+                                                {{ $member->name }}
+                                            </option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
 
-                            <!----- date (Day) ----->
+                            <!----- date ----->
                             <div class="col-md-4 mt-3 datepicker-box">
                                 <div class="input__box">
                                     <i class="input__icon fa-solid fa-calendar"></i>
-                                    <input class="textbox-n" type="text" onfocus="(this.type='date');this.showPicker()" onblur="(this.type='text')"  placeholder="تاريخ الحجز : *" id="date" />
+                                    <input class="textbox-n" type="text" onfocus="(this.type='date');this.showPicker()" onblur="(this.type='text')"  placeholder="تاريخ الحجز : *" value="{{ old('date') }}" name="date" id="date" required />
                                 </div>
                             </div>
 
-                            <!----- date (Day) ----->
+                            <!----- time ----->
                             <div class="col-md-4 mt-3 datepicker-box">
                                 <div class="input__box">
                                     <i class="input__icon fa-solid fa-clock"></i>
-                                    <input class="textbox-n" type="text" onfocus="(this.type='time');this.showPicker()" " onblur="(this.type='text')"  placeholder="وقت الحجز : *" id="date" />
+                                    <input class="textbox-n" type="text" onfocus="(this.type='time');this.showPicker()" " onblur="(this.type='text')"  placeholder="وقت الحجز : *" value="{{ old('time') }}" name="time" id="time" required />
                                 </div>
                             </div>
 
+
+                            <!----- Submit Btn ----->
                             <div class="col-md-4 mt-3">
-                                <a href="#" class="theme-btn-one blue-opcity w-100">احجز الان</a>
+                                <button type="submit" class="theme-btn-one blue-opcity w-100">احجز الان</button>
                             </div>
 
                         </div>

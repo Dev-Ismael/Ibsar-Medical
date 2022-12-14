@@ -6,11 +6,14 @@
 const inputs = document.querySelectorAll(".form-control");
 
 for (var i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('click', function (event) {
-        this.classList.remove("is-invalid");
-        var textDanger = this.parentElement.querySelector(".text-danger");
-        textDanger.style.display = "none";
-    });
+    var eventList = ["click", "focus"];
+    for(event of eventList) {
+        inputs[i].addEventListener(event,  function () {
+            this.classList.remove("is-invalid");
+            var textDanger = this.parentElement.querySelector(".text-danger");
+            textDanger.style.display = "none";
+        });
+    }
 }
 /*==================================================
 ================ Scroll To Top
@@ -61,8 +64,8 @@ $(document).ready(function () {
         placeholder: "Choose Article Category...",
     });
     // Article , Pin
-    $("select#pinned").select2( {
-        placeholder: "Choose Article Status...",
+    $("select#member_id").select2( {
+        placeholder: "Choose Appointment Doctor...",
     });
     // member , slider_show
     $("select#slider_show").select2( {

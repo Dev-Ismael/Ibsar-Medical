@@ -21,6 +21,14 @@ return new class extends Migration
             ->onDelete("cascade")
             ->onUpdate("cascade");
         });
+        ################ Appointment ###################
+        Schema::table('appointments', function (Blueprint $table) {
+            $table->foreign("member_id")
+            ->references('id')
+            ->on("members")
+            ->onDelete("cascade")
+            ->onUpdate("cascade");
+        });
     }
 
     /**

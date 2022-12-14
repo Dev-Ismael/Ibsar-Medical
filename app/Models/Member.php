@@ -21,4 +21,10 @@ class Member extends Model
     ];
 
 
+
+    ############################## Relations ################################
+    public function appointments(){
+        return  $this -> hasMany("App\Models\Appointments") ;
+    }
+
 }

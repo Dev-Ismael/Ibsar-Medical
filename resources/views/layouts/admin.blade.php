@@ -180,13 +180,22 @@
                             <span class="sidebar-text">Members</span>
                         </a>
                     </li>
-                    <li class="nav-item d-none">
+                    <li class="nav-item">
                         <a href="{{ route('admin.service.index') }}"
                             class="nav-link {{ Request::is('*/service*') ? 'active' : '' }}">
                             <span class="sidebar-icon">
                                 <i class="fa-solid fa-handshake-simple"></i>
                             </span>
                             <span class="sidebar-text">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.appointment.index') }}"
+                            class="nav-link {{ Request::is('*/appointment*') ? 'active' : '' }}">
+                            <span class="sidebar-icon">
+                                <i class=" fa-solid fa-clock"></i>
+                            </span>
+                            <span class="sidebar-text">Appointments</span>
                         </a>
                     </li>
                     <li class="nav-item d-none">

@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Appointments;
 
-use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
-    class CategoryRequest extends FormRequest
+class StoreAppointmentRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,7 +24,11 @@ use Illuminate\Foundation\Http\FormRequest;
     public function rules()
     {
         return [
-            'title'           => ['required' , 'string' , 'max:100' , Rule::unique('categories', 'title')->ignore($this->category)],
+            'member_id'     => ['required' , 'numeric'],
+            'username'      => ['required', 'string', 'max:255'],
+            'phone'         => ['required', 'string', 'max:255'],
+            'date'          => ['required', 'string', 'max:255'],
+            'time'          => ['required', 'string', 'max:255'],
         ];
     }
 }

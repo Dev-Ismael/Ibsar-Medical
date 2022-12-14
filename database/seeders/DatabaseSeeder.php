@@ -100,5 +100,15 @@ class DatabaseSeeder extends Seeder
             'content'      => 'content',
         ]);
 
+
+        \App\Models\Appointment::factory()->create([
+            'username'    => 'username',
+            'phone'       => '01253444723',
+            'member_id'      => 1,
+            'date'        => '07/05/2022',
+            'time'        => '12:36 AM',
+        ]);
+
+
     }
 }

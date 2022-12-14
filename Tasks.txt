@@ -1,5 +1,10 @@
 
 
+DB Name : writbujl_Isbar_DB
+DB Username : writbujl_Ibasar
+DB Password : 43700DJGUE84323
+
+
 Advanced Tasks:
 =================
     - Arrange Route Group in Web.php

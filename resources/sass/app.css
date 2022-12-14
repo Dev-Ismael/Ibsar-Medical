@@ -1,0 +1,232 @@
+/*=======================================================
+============ Global Properties
+=======================================================*/
+#home-page {
+  /*=== Blog Section ===*/
+  /*=== Testimoinal Section ====*/
+  /*==== Team Section ====*/
+  /*=== Blog Section ===*/
+}
+#home-page .service-custom-section .service-block-one .inner-box.dark {
+  background: #3387b2;
+}
+#home-page .service-custom-section .service-block-one .inner-box.dark a, #home-page .service-custom-section .service-block-one .inner-box.dark h4, #home-page .service-custom-section .service-block-one .inner-box.dark p {
+  color: #fff;
+}
+#home-page .testimonial-section .inner-content {
+  background-color: #3387b2;
+  box-shadow: -10px 10px rgba(51, 136, 178, 0.3764705882);
+}
+#home-page .testimonial-section .inner-content h6,
+#home-page .testimonial-section .inner-content h5 {
+  color: #fff;
+}
+#home-page .testimonial-section .inner-content .sec-title {
+  margin-bottom: 0px !important;
+}
+#home-page .testimonial-section .inner-content .about-content {
+  padding: 20px 0px;
+  color: rgb(199, 199, 199);
+}
+#home-page .testimonial-section .inner-content hr {
+  background-color: #fff !important;
+  height: 1px;
+}
+#home-page .testimonial-section .inner-content .working-hours * {
+  color: #fff;
+}
+#home-page .team-section .social-style-one li {
+  float: inherit;
+}
+#home-page .team-section .social-style-one li a {
+  color: #ffffff;
+  background: #3387b2;
+}
+#home-page .custom-blog-section {
+  padding: 150px 0px 150px 0px;
+}
+#home-page .custom-blog-section .custom-post {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+#home-page .custom-blog-section .custom-post.big-post {
+  border-radius: 20px;
+  width: 100%;
+  height: 600px;
+}
+#home-page .custom-blog-section .custom-post.big-post .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+#home-page .custom-blog-section .custom-post.big-post .date {
+  text-align: center;
+  position: absolute;
+  background-color: #3387b2;
+  padding: 20px 30px;
+  top: 10px;
+  left: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#home-page .custom-blog-section .custom-post.big-post .date p {
+  color: #fff;
+}
+#home-page .custom-blog-section .custom-post.big-post .heading {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+#home-page .custom-blog-section .custom-post.big-post .heading * {
+  padding: 7px 10px;
+  color: #fff;
+}
+#home-page .custom-blog-section .custom-post.original-post {
+  border-radius: 0px 20px 20px 0px;
+  border-bottom: 5px solid #3387b2;
+  background-color: rgba(51, 136, 178, 0.137254902);
+  width: 100%;
+  height: 280px;
+}
+#home-page .custom-blog-section .custom-post.original-post .post-content {
+  padding: 0px 10px;
+}
+#home-page .custom-blog-section .custom-post.original-post .post-content * {
+  padding: 7px 0px;
+}
+#home-page .custom-blog-section .custom-post.original-post .post-content .date {
+  color: #3387b2;
+}
+
+/*======================================================
+======== Global Properties
+======================================================*/
+.section-padding {
+  padding: 150px 0px 150px 0px !important;
+}
+
+.bg-style {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.font-blue {
+  color: #3387b2 !important;
+}
+
+.theme-btn-one {
+  border-radius: 10px !important;
+  padding: 12px 40px;
+}
+.theme-btn-one.blue-opcity {
+  background: #71b0cf;
+}
+.theme-btn-one.white {
+  background: #fff;
+  color: #3387b2 !important;
+}
+.theme-btn-one.white:hover {
+  color: #fff !important;
+}
+
+.input__box {
+  position: relative;
+}
+.input__box .input__icon {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+.input__box input,
+.input__box select {
+  width: 100%;
+  padding: 12px 10px 12px 50px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+.input__box input::-webkit-input-placeholder,
+.input__box select::-webkit-input-placeholder {
+  /* Edge */
+  color: rgb(199, 199, 199);
+}
+.input__box input:-ms-input-placeholder,
+.input__box select:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: rgb(199, 199, 199);
+}
+.input__box input::placeholder,
+.input__box select::placeholder {
+  color: rgb(199, 199, 199);
+}
+.input__box input:active, .input__box input:focus, .input__box input:hover,
+.input__box select:active,
+.input__box select:focus,
+.input__box select:hover {
+  outline: none;
+  background-color: transparent !important;
+}
+.input__box select {
+  color: rgb(199, 199, 199);
+  padding: 15px;
+}
+.input__box input[type=date]::-webkit-inner-spin-button,
+.input__box input[type=date]::-webkit-calendar-picker-indicator,
+.input__box input[type=time]::-webkit-inner-spin-button,
+.input__box input[type=time]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/*======================================================
+======== NewsLettter
+======================================================*/
+.cta-section .inner-box h5 {
+  font-size: 26px;
+}
+.cta-section .inner-box .theme-btn-one {
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  padding: 12px 50px;
+}
+.cta-section .inner-box .theme-btn-one:hover {
+  border: 1px solid #3387b2 !important;
+}
+
+/*======================================================
+======== Footer
+======================================================*/
+.main-footer .social-style-one li {
+  float: inherit !important;
+}
+.main-footer .social-style-one li a {
+  color: #3387b2;
+  border: 1px solid #3387b2;
+  margin: 0px 7px !important;
+}
+.main-footer .social-style-one li a:hover {
+  color: #fff;
+}
+.main-footer hr {
+  width: 70%;
+  margin: 0px auto;
+  height: 2px;
+  background-color: rgb(179, 179, 179);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */

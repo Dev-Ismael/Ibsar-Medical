@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Appointments;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ContactRequest extends FormRequest
+class UpdateAppointmentRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,11 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'       => ['required' , 'string' , 'max:55' ],
-            'email'      => ['required' , 'email'  , 'max:55' ],
-            'phone'      => ['required' , 'string' , 'max:55' ],
-            'messege'    => ['required' , 'string' , 'max:1000' ],
+            'member_id'     => ['required' , 'numeric'],
+            'username'      => ['required', 'string', 'max:255'],
+            'phone'         => ['required', 'string', 'max:255'],
+            'date'          => ['required', 'string', 'max:255'],
+            'time'          => ['required', 'string', 'max:255'],
         ];
     }
 }
