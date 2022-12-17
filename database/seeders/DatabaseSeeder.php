@@ -57,7 +57,6 @@ class DatabaseSeeder extends Seeder
             'seo_description' => 'seo_description',
             'seo_keywords' => 'seo_keywords',
             'summary' => 'summary',
-            'parent_id' => 1,
             'content' => 'content',
             'icon' => 'icon',
             'img' => 'img',

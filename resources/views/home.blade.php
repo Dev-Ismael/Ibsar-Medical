@@ -141,52 +141,26 @@
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
-                            data-wow-duration="1500ms"
-                            >
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-5"></i></div>
-                                <h4><a href="index.html">الماء الأبيض </a></h4>
-                                <p>الماء الأبيض (الساد) ويسمى أيضًا (الكتاراكت)
-                                    وهو عتامة عدسة العين أي تعكر في عدسة
-                                    العين السليمة</p>
-                                <div class="btn-box mt-5"><a href="index.html" class="theme-btn-one">المزيد</a></div>
+                    @foreach ( $services as $service )
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                                data-wow-duration="1500ms"
+                                >
+                                <div class="inner-box">
+                                    <div class="icon-box">
+                                        <img src="{{ asset("images/services/". $service->icon ) }}" width="120" alt="service-icon">
+                                    </div>
+                                    <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }} </a></h4>
+                                    <p> {{ $service->summary }} </p>
+                                    <div class="btn-box mt-5"><a href="{{ route('service.show', $service->slug) }}" class="theme-btn-one">المزيد</a></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="200ms"
-                            data-wow-duration="1500ms"
-                            style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-                            <div class="inner-box dark">
-                                <div class="icon-box"><i class="icon-6"></i></div>
-                                <h4><a href="index.html">الماء الأزرق (الجلوكوما)</a></h4>
-                                <p>هي أحد الأمراض التي تصيب العين التي تحدث
-                                    نتيجة ارتفاع الضغط داخل العين بصورة غير
-                                    طبيعية</p>
-                                <div class="btn-box mt-5"><a href="index.html" class="theme-btn-one white">المزيد</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="400ms"
-                            data-wow-duration="1500ms"
-                            style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-7"></i></div>
-                                <h4><a href="index.html">عيون الأطفال و الحول</a></h4>
-                                <p>نوفر التشخيص المبكر لعيوب الإبصار عند
-                                    الأطفال بأحدث التقنيات لعلاج حالات كسل
-                                    العين و الأمراض الخلقية و الوراثية</p>
-                                <div class="btn-box mt-5"><a href="index.html" class="theme-btn-one">المزيد</a></div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="more-details mt-5 text-center">
                     لمشاهدة المزيد من الخدمات
-                    <a href="#" class="font-blue">  اضغط هنا </a>
+                    <a href="{{ route("service.index") }}" class="font-blue">  اضغط هنا </a>
                 </div>
             </div>
         </section>

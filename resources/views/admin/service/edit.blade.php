@@ -93,21 +93,6 @@
                                         </div>
 
 
-                                        <!----------------- Parent Service -------------------->
-                                        <div class="mb-4 input-content">
-                                            <label for="parent_id" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Parent Service (Optional) </label>
-                                            <select class="form-select form-control @error('parent_id') is-invalid @enderror" name="parent_id" id="service"  aria-label="Default select example" >
-                                                <option></option>
-                                                @foreach ( $services as $service_parent )
-                                                    <option value="{{ $service_parent->id }}"  {{ $service->parent_id == $service_parent->id ? "selected" : "" }} >{{ $service_parent->title }}</option>
-                                                @endforeach
-                                            </select>
-                                            @error('parent_id')
-                                                <small class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
-                                        </div>
-
-
                                         <!----------------- Content -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="content" class="capitalize"> <i class="fa-solid fa-align-left"></i> Service Content </label>

@@ -94,7 +94,11 @@
 
 
         <!-- main header -->
-        <header class="main-header style-four">
+        <header class="main-header style-four
+            @if ( Request::route()->getName() != 'home')
+                relative-header
+            @endif
+        ">
             <!-- header-lower -->
             <div class="header-lower container">
                 <div class="outer-box">

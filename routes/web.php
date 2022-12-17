@@ -24,6 +24,8 @@ Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->na
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::post('/appointment', [App\Http\Controllers\AppointmentController::class, 'store'])->name('store_appointment');
 
+Route::get('/services', [App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');
+Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'show'])->name('service.show');
 
 // Route::get('/test', function () {
 //     return view("submission");
