@@ -18,14 +18,19 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::post('/appointment', [App\Http\Controllers\AppointmentController::class, 'store'])->name('store_appointment');
 
+// Members
+Route::get('/members', [App\Http\Controllers\MemberController::class, 'index'])->name('member.index');
+
+// Services
 Route::get('/services', [App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');
 Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'show'])->name('service.show');
+
+
 
 // Route::get('/test', function () {
 //     return view("submission");

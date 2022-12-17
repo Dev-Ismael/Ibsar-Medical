@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Member;
 use App\Models\Service;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,9 +17,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $testimonials = Testimonial::where('visibility', '1')->get();
+        $testimonials = Testimonial::where('visibility', '1')->get();
         $members      = Member::where('slider_show','1')->get();
-        // $articles     = Article::orderBy('id','desc')->limit(6)->get();
+        $articles     = Article::orderBy('id','desc')->limit(6)->get();
         $services     = Service::where('visibility', '1')->limit(3)->get();
 
         // // SEO Trait

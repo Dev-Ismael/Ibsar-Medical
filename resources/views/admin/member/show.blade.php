@@ -64,6 +64,12 @@
                                             <td class="text-capitalize"> <i class="fa-solid fa-user-tie"></i> Job Title </td>
                                             <td> {{ $member->job_title != "" ? $member->job_title : '-'  }} </td>
                                         </tr>
+                                        <tr>
+                                            <td class="text-capitalize"> <i class="fa-brands fa-twitter"></i> Twitter </td>
+                                            <td>
+                                                <a href="{{ $member->twitter }}" target="_blank" class="btn btn-icon-only btn-twitter text-white"> <i class="fa-brands fa-twitter"></i> </a>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

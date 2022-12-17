@@ -1,18 +1,25 @@
 /*=======================================================
 ============ Global Properties
 =======================================================*/
-#home-page {
 
     /*=== Blog Section ===*/
     .service-custom-section{
 
-        .service-block-one .inner-box.dark{
-            background: $blue;
-            a,h4,p{
-                color: #fff ;
-            }
-        }
+        .service-block-one{
+            .inner-box{
+                height: 100%;
 
+            }
+            height: 100%;
+
+            &.dark{
+                background: $blue;
+                a,h4,p{
+                    color: #fff ;
+                }
+            }
+
+        }
     }
 
 
@@ -131,5 +138,3 @@
             }
         }
     }
-
-}

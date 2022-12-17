@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name', 100 )->index();
             $table->string('job_title', 100 );
             $table->string('slider_show' , 1 )->default('0');
+            $table->string('twitter');
             $table->string('img');
             $table->timestamps();
         });

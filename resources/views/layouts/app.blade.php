@@ -92,6 +92,9 @@
         </div>
         <!-- search-popup end -->
 
+        @php
+            $services   = App\Models\Service::get();
+        @endphp
 
         <!-- main header -->
         <header class="main-header style-four
@@ -116,17 +119,15 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li><a href="{{ route("home") }}">الرئيسية</a></li>
-                                    <li class="dropdown"><a href="index.html">الخدمات</a>
+                                    <li class="dropdown"><a href="{{ route("service.index") }}" >الخدمات</a>
                                         <ul>
-                                            <li><a href="index.html">خدمة</a></li>
-                                            <li><a href="index-2.html">خدمة</a></li>
-                                            <li><a href="index-3.html">خدمة</a></li>
-                                            <li><a href="index-4.html">خدمة</a></li>
-                                            <li><a href="index-5.html">خدمة</a></li>
+                                            @foreach ( $services as $service )
+                                                <li><a href="{{ route("service.show", $service->slug ) }}">{{ $service->title }}</a></li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li><a href="{{ route("about") }}">من نحن</a></li>
-                                    <li><a href="{{ route("contact") }}">الطاقم الطبي</a></li>
+                                    <li><a href="{{ route("member.index") }}">الطاقم الطبي</a></li>
                                     <li><a href="{{ route("contact") }}">العروض</a></li>
                                     <li><a href="{{ route("contact") }}">حجز موعد</a></li>
                                 </ul>
@@ -145,11 +146,6 @@
                                 <!--Keep This Empty / Menu will come through Javascript-->
                             </nav>
                         </div>
-                        <ul class="menu-right-content pull-right clearfix">
-                            <li class="search-btn">
-                                <button type="button" class="search-toggler"><i class="icon-1"></i></button>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

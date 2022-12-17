@@ -2453,18 +2453,6 @@ div#mCSB_1_container{
   border-radius: 20px;
 }
 
-.team-block-one .inner-box .image-box:before{
-  position: absolute;
-  content: '';
-  background: #000;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  transform: scale(0,0);
-  opacity: 0.6;
-  transition: all 500ms ease;
-}
 
 .team-block-one .inner-box:hover .image-box:before{
   transform: scale(1,1);
@@ -8426,6 +8414,7 @@ h4 a:hover{
 .event-details-content .image img{
   width: 100%;
   border-radius: 20px;
+  box-shadow: 0 10px 30px #f0f0f0;
 }
 
 .event-details-content .text h3{

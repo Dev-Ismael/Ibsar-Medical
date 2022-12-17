@@ -60,6 +60,16 @@
                                         </div>
 
 
+                                        <!----------------- twitter -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="twitter" class="capitalize"> <i class="fa-brands fa-twitter"></i> twitter </label>
+                                            <input type="text" name="twitter" id="twitter" class="form-control @error('twitter') is-invalid @enderror" value="{{ $member->twitter }}" aria-describedby="emailHelp" placeholder="Type Member Twitter Link..." autocomplete="nope" />
+                                            @error('twitter')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
+
                                         <!----------------- slider_show -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="slider_show" class="capitalize"> <i class="fa-solid fa-sliders"></i> Visibile in Home Slider Show </label>
