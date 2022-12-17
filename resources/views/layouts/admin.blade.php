@@ -198,7 +198,7 @@
                             <span class="sidebar-text">Appointments</span>
                         </a>
                     </li>
-                    <li class="nav-item d-none">
+                    <li class="nav-item">
                         <a href="{{ route('admin.testimonial.index') }}"
                             class="nav-link {{ Request::is('*/testimonial*') ? 'active' : '' }}">
                             <span class="sidebar-icon">
@@ -207,7 +207,7 @@
                             <span class="sidebar-text">Testimonials</span>
                         </a>
                     </li>
-                    <li class="nav-item d-none">
+                    <li class="nav-item">
                         <span class="nav-link d-flex justify-content-between align-items-center collapsed"
                             data-bs-toggle="collapse" data-bs-target="#newsletters" aria-expanded="false">
                             <span>
@@ -239,7 +239,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('*/newsletter*') ? 'active' : '' }}"
+                                    <a class="nav-link d-none {{ Request::is('*/newsletter*') ? 'active' : '' }}"
                                         href="{{ route('admin.newsletter.index') }}">
                                         <span class="sidebar-text-contracted">
                                             <i class="fa-solid fa-envelope"></i>
@@ -253,7 +253,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item d-none">
+                    <li class="nav-item">
                         <a href="{{ route('admin.setting.edit') }}"
                             class="nav-link {{ Request::is('*/setting*') ? 'active' : '' }}">
                             <span class="sidebar-icon">

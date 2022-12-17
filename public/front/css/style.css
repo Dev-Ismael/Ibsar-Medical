@@ -496,15 +496,16 @@ img {
   margin: 0px !important;
 }
 
-.pagination li a{
+.pagination li a,
+.pagination li span{ 
   position: relative;
   display: inline-block;
   font-size: 18px;
   font-weight: 500;
   font-family: 'Barlow', sans-serif;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
+  height: 60px !important;
+  width: 60px !important;
+  line-height: 45px !important;
   background: #ffffff;
   text-align: center;
   border: 1px solid #e5e5e5;
@@ -2862,7 +2863,7 @@ div#mCSB_1_container{
   overflow: hidden;
   background: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 10px 30px #edf2f2;
+  box-shadow: 0 10px 30px #b9b9b9;
   transition: all 500ms ease;
 }
 
@@ -8414,7 +8415,7 @@ h4 a:hover{
 .event-details-content .image img{
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 10px 30px #f0f0f0;
+  box-shadow: 0 10px 30px #c1c1c1;
 }
 
 .event-details-content .text h3{

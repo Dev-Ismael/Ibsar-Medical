@@ -20,11 +20,6 @@
     <!-- team Section -->
     <section class="team-section">
         <div class="auto-container">
-            <div class="sec-title centred">
-                <h6>الطاقم الطبي</h6>
-                <p>لدينا أطباء ذو كفاءة عالية في خدمتك</p>
-            </div>
-
             <div class="row clearfix">
 
                 @foreach ( $members as $member )

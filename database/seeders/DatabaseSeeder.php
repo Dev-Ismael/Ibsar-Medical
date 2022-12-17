@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
             'title' => 'title',
             'slug' => 'slug',
             'content' => 'content',
+            'summary' => 'summary',
             'seo_title' => 'seo_title',
             'seo_description' => 'seo_description',
             'seo_keywords' => 'seo_keywords',

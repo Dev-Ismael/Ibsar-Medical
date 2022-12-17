@@ -8,7 +8,9 @@
     position: relative !important;
 }
 
-
+.pull-1{
+    margin-right: 8.333333%;
+}
 .section-padding {
     padding: 150px 0px 150px 0px !important;
 }
@@ -63,7 +65,7 @@
     input,
     select {
         width: 100%;
-        padding: 12px 10px 12px 50px;
+        padding: 10px 10px 10px 50px;
         background-color: transparent;
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.5);

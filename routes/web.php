@@ -32,6 +32,16 @@ Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 's
 
 
 
+// subscribe
+Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');
+
+
+// Blog
+Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
+Route::post('/blog/search', [App\Http\Controllers\BlogController::class, 'search'])->name('blog.search');
+Route::get('/{slug}', [App\Http\Controllers\BlogController::class, 'article'])->name('article');
+
+
 // Route::get('/test', function () {
 //     return view("submission");
 // });

@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Member;
 use App\Models\Service;
-use App\Models\Testimonial;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -17,9 +15,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::where('visibility', '1')->get();
         $members      = Member::where('slider_show','1')->get();
-        $articles     = Article::orderBy('id','desc')->limit(6)->get();
+        $articles     = Article::orderBy('id','desc')->limit(3)->get();
         $services     = Service::where('visibility', '1')->limit(3)->get();
 
         // // SEO Trait
@@ -29,6 +26,6 @@ class HomeController extends Controller
         //     'tax services,Tax,cpa firms,LLC,LLP,CPA,IRS,NJ,new jersey,clifton,consulting firms,consulting services,payroll,taxes 2021,consulting services,business,cpa business,precision accounting'
         // );
 
-        return view('home' , compact('members','services'));
+        return view('home' , compact('members','articles','services'));
     }
 }

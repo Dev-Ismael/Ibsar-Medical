@@ -129,7 +129,7 @@
                                     <li><a href="{{ route("about") }}">من نحن</a></li>
                                     <li><a href="{{ route("member.index") }}">الطاقم الطبي</a></li>
                                     <li><a href="{{ route("contact") }}">العروض</a></li>
-                                    <li><a href="{{ route("contact") }}">حجز موعد</a></li>
+                                    <li><a href="/#book-appointment">حجز موعد</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -185,7 +185,7 @@
             @yield('content')
         </main>
 
-        <!------- NewsLetter  ------->
+        <!------- NewsLetter ------->
         <section class="cta-section">
             <div class="auto-container">
                 <div class="inner-box clearfix">
@@ -193,22 +193,19 @@
                         <h5>الاخبار</h5>
                         <p> اشـترك بـالنشـرة الإخـباريـة </p>
                     </div>
-                    <form action="">
+                    <form action="{{ route('subscriber.store') }}" method="POST">
+                        @csrf
                         <div class="row">
-                            <div class="col-8 offset-4">
-                                Hello
+                            <div class="col-md-8 pull-1">
+                                <div class="input__box">
+                                    <i class="input__icon fa-solid fa-envelope"></i>
+                                    <input type="email" class="w-100" placeholder="البريد الاليكتروني : *" name="email" autocomplete="nope" minlength="8" required/>
+                                </div>
                             </div>
-                            {{--
-                                <div class="col-md-6 pull-4">
-                                    <div class="input__box">
-                                        <i class="input__icon fa-solid fa-envelope"></i>
-                                        <input type="text" class="w-100" placeholder="البريد الاليكتروني : *" name="email" autocomplete="nope" />
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <a href="index-3.html" class="theme-btn-one">اشتراك</a>
-                                </div>
-                            --}}
+                            <div class="col-md-2">
+                                <button type="submit" class="theme-btn-one">اشتراك</button>
+                            </div>
+
                         </div>
                     </form>
                 </div>

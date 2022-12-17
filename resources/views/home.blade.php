@@ -57,7 +57,7 @@
         <!-- banner-section end -->
 
         <!-- Start Book Section -->
-        <section class="cta-style-two bg-color-3 rtl">
+        <section id="book-appointment" class="cta-style-two bg-color-3 rtl">
             <div class="auto-container">
                 <div class="inner-box clearfix rtl">
                     <h4 class="title text-white">احجز معنا : </h4>
@@ -247,7 +247,7 @@
                             <p>أحدث المقالات والتقنيات الطبية المتخصصة بالعيون</p>
                         </div>
                         <div class="col-4 text-left">
-                            <a href="#" class="theme-btn-one">المزيد</a>
+                            <a href="{{ route("blog") }}" class="theme-btn-one">المزيد</a>
                         </div>
                     </div>
                 </div>
