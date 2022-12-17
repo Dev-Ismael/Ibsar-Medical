@@ -258,16 +258,15 @@
                             data-wow-duration="1500ms"
                             >
                             <div class="inner-box custom-post big-post bg-style"
-                                style="background-image: url(/front/images/team/team-1.jpg)">
+                                style="background-image: url(/images/articles/{{ $articles[0]->img }})">
                                 <div class="overlay">
                                     <div class="date">
                                         <p class="day"> 25 </p>
                                         <p class="month">مايو</p>
                                     </div>
                                     <div class="heading">
-                                        <h3> الماء البيضاء </h3>
-                                        <p> الماء الأبيض (الساد) ويسمى أيضًا (الكتاراكت) وهو عتامة عدسة
-                                            العين أي تعكر في عدسة العين السليمة </p>
+                                        <h3> <a href="{{ route('article', $articles[0]->slug) }}" > {{ $articles[0]->title }} </a> </h3>
+                                        <p> {{ $articles[0]->summary }} </p>
                                     </div>
                                 </div>
                             </div>
@@ -284,13 +283,12 @@
                                     <div class="inner-box custom-post original-post">
                                         <div class="row h-100">
                                             <div class="col-5 bg-style"
-                                                style="background-image: url(/front/images/team/team-1.jpg)"></div>
+                                                style="background-image: url(/images/articles/{{ $articles[1]->img }})"></div>
                                             <div class="col-7 d-flex align-items-center">
                                                 <div class="post-content">
                                                     <p class="date"> 2022 ،مايو 29 </p>
-                                                    <h6 class="f-bold"> عيون الأطفال و الحول </h6>
-                                                    <p> نوفر التشخيص المبكر لعيوب الإبصار عند الأطفال بأحدث
-                                                        التقنيات لعلاج حالات كسل العين و الأمراض الخلقية و </p>
+                                                    <h6 class="f-bold"> <a href="{{ route('article', $articles[1]->slug) }}" >  {{ $articles[1]->title }} </a> </h6>
+                                                    <p> {{ $articles[1]->summary }} </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -305,13 +303,12 @@
                                     <div class="inner-box custom-post original-post">
                                         <div class="row h-100">
                                             <div class="col-5 bg-style"
-                                                style="background-image: url(/front/images/team/team-1.jpg)"></div>
+                                                style="background-image: url(/images/articles/{{ $articles[2]->img }})"></div>
                                             <div class="col-7 d-flex align-items-center">
                                                 <div class="post-content">
                                                     <p class="date"> 2022 ،مايو 29 </p>
-                                                    <h6 class="f-bold"> عيون الأطفال و الحول </h6>
-                                                    <p> نوفر التشخيص المبكر لعيوب الإبصار عند الأطفال بأحدث
-                                                        التقنيات لعلاج حالات كسل العين و الأمراض الخلقية و </p>
+                                                    <h6 class="f-bold"> <a href="{{ route('article', $articles[2]->slug) }}" >  {{ $articles[2]->title }} </a> </h6>
+                                                    <p> {{ $articles[2]->summary }} </p>
                                                 </div>
                                             </div>
                                         </div>

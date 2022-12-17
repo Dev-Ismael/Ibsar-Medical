@@ -18,7 +18,7 @@ Advanced Tasks:
 
 DB Tables:
 ===========
-- team
+- Team
 - Service
 - Messeges
 - Appoitment
@@ -27,3 +27,4 @@ DB Tables:
 - Posts
 - Categories
 - Offers
+- resposabilities
