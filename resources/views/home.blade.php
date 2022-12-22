@@ -129,41 +129,43 @@
 
 
         <!-- service-section -->
-        <section class="service-custom-section section-padding">
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <div class=" row align-items-center h-100">
-                        <div class="col-8 text-right">
-                            <h6>خدماتنا</h6>
-                            <p>نلتزم بالعمل بامتياز لتقديم خدماتنا للمرضى على أعلى معايير
-                                الجودة و السلامة</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    @foreach ( $services as $service )
-                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                            <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
-                                data-wow-duration="1500ms"
-                                >
-                                <div class="inner-box">
-                                    <div class="icon-box">
-                                        <img src="{{ asset("images/services/". $service->icon ) }}" width="120" alt="service-icon">
-                                    </div>
-                                    <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }} </a></h4>
-                                    <p> {{ $service->summary }} </p>
-                                    <div class="btn-box mt-5"><a href="{{ route('service.show', $service->slug) }}" class="theme-btn-one">المزيد</a></div>
-                                </div>
+        @if(!$services->isEmpty())
+            <section class="service-custom-section section-padding">
+                <div class="auto-container">
+                    <div class="sec-title centred">
+                        <div class=" row align-items-center h-100">
+                            <div class="col-8 text-right">
+                                <h6>خدماتنا</h6>
+                                <p>نلتزم بالعمل بامتياز لتقديم خدماتنا للمرضى على أعلى معايير
+                                    الجودة و السلامة</p>
                             </div>
                         </div>
-                    @endforeach
+                    </div>
+                    <div class="row clearfix">
+                        @foreach ( $services as $service )
+                            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                                <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                                    data-wow-duration="1500ms"
+                                    >
+                                    <div class="inner-box">
+                                        <div class="icon-box">
+                                            <img src="{{ asset("images/services/". $service->icon ) }}" width="120" alt="service-icon">
+                                        </div>
+                                        <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }} </a></h4>
+                                        <p> {{ $service->summary }} </p>
+                                        <div class="btn-box mt-5"><a href="{{ route('service.show', $service->slug) }}" class="theme-btn-one">المزيد</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="more-details mt-5 text-center">
+                        لمشاهدة المزيد من الخدمات
+                        <a href="{{ route("service.index") }}" class="font-blue">  اضغط هنا </a>
+                    </div>
                 </div>
-                <div class="more-details mt-5 text-center">
-                    لمشاهدة المزيد من الخدمات
-                    <a href="{{ route("service.index") }}" class="font-blue">  اضغط هنا </a>
-                </div>
-            </div>
-        </section>
+            </section>
+        @endif
 
 
         <!-- Working-Hours section -->
@@ -198,130 +200,135 @@
         </section>
         <!-- Working-Hours section end -->
 
+
         <!-- team Section -->
-        <section class="team-section">
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <h6>الطاقم الطبي</h6>
-                    <p>لدينا أطباء ذو كفاءة عالية في خدمتك</p>
-                </div>
+        @if(!$members->isEmpty())
+            <section class="team-section">
+                <div class="auto-container">
+                    <div class="sec-title centred">
+                        <h6>الطاقم الطبي</h6>
+                        <p>لدينا أطباء ذو كفاءة عالية في خدمتك</p>
+                    </div>
 
-                <div class="row clearfix">
+                    <div class="row clearfix">
 
-                    @foreach ( $members as $member )
-                        <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
-                                data-wow-duration="1500ms"
-                                >
-                                <div class="inner-box text-center">
-                                    <figure class="image-box">
-                                        <img src="{{ asset('images/members/'. $member->img) }}" alt="">
-                                    </figure>
-                                    <div class="lower-content">
-                                        <h4>{{ $member->name }}</h4>
-                                        <span class="designation">{{ $member->job_title }}</span>
-                                    </div>
-                                    <div class="social-icons">
-                                        <ul class="social-style-one clearfix">
-                                            <li><a href="{{ $member->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                        </ul>
+                        @foreach ( $members as $member )
+                            <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                                <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                                    data-wow-duration="1500ms"
+                                    >
+                                    <div class="inner-box text-center">
+                                        <figure class="image-box">
+                                            <img src="{{ asset('images/members/'. $member->img) }}" alt="">
+                                        </figure>
+                                        <div class="lower-content">
+                                            <h4>{{ $member->name }}</h4>
+                                            <span class="designation">{{ $member->job_title }}</span>
+                                        </div>
+                                        <div class="social-icons">
+                                            <ul class="social-style-one clearfix">
+                                                <li><a href="{{ $member->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
 
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- team Section -->
+            </section>
+            <!-- team Section -->
+        @endif
 
 
         <!-- Blog Section -->
-        <section class="custom-blog-section">
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <div class=" row align-items-center h-100">
-                        <div class="col-8 text-right">
-                            <h6>المكتبة الطبية</h6>
-                            <p>أحدث المقالات والتقنيات الطبية المتخصصة بالعيون</p>
-                        </div>
-                        <div class="col-4 text-left">
-                            <a href="{{ route("blog") }}" class="theme-btn-one">المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row clearfix">
-                    <div class="col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
-                            data-wow-duration="1500ms"
-                            >
-                            <div class="inner-box custom-post big-post bg-style"
-                                style="background-image: url(/images/articles/{{ $articles[0]->img }})">
-                                <div class="overlay">
-                                    <div class="date">
-                                        <p class="day"> 25 </p>
-                                        <p class="month">مايو</p>
-                                    </div>
-                                    <div class="heading">
-                                        <h3> <a href="{{ route('article', $articles[0]->slug) }}" > {{ $articles[0]->title }} </a> </h3>
-                                        <p> {{ $articles[0]->summary }} </p>
-                                    </div>
-                                </div>
+        @if(!$members->isEmpty() && count($members) >= 3)
+            <section class="custom-blog-section">
+                <div class="auto-container">
+                    <div class="sec-title centred">
+                        <div class=" row align-items-center h-100">
+                            <div class="col-8 text-right">
+                                <h6>المكتبة الطبية</h6>
+                                <p>أحدث المقالات والتقنيات الطبية المتخصصة بالعيون</p>
+                            </div>
+                            <div class="col-4 text-left">
+                                <a href="{{ route("blog") }}" class="theme-btn-one">المزيد</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-12 team-block">
-                        <div class="row">
+                    <div class="row clearfix">
+                        <div class="col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                                data-wow-duration="1500ms"
+                                >
+                                <div class="inner-box custom-post big-post bg-style"
+                                    style="background-image: url(/images/articles/{{ $articles[0]->img }})">
+                                    <div class="overlay">
+                                        <div class="date">
+                                            <p class="day"> 25 </p>
+                                            <p class="month">مايو</p>
+                                        </div>
+                                        <div class="heading">
+                                            <h3> <a href="{{ route('article', $articles[0]->slug) }}" > {{ $articles[0]->title }} </a> </h3>
+                                            <p> {{ $articles[0]->summary }} </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="col-md-12 team-block">
-                                <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
-                                    data-wow-duration="1500ms"
-                                    >
-                                    <div class="inner-box custom-post original-post">
-                                        <div class="row h-100">
-                                            <div class="col-5 bg-style"
-                                                style="background-image: url(/images/articles/{{ $articles[1]->img }})"></div>
-                                            <div class="col-7 d-flex align-items-center">
-                                                <div class="post-content">
-                                                    <p class="date"> 2022 ،مايو 29 </p>
-                                                    <h6 class="f-bold"> <a href="{{ route('article', $articles[1]->slug) }}" >  {{ $articles[1]->title }} </a> </h6>
-                                                    <p> {{ $articles[1]->summary }} </p>
+                        <div class="col-md-6 col-sm-12 team-block">
+                            <div class="row">
+
+                                <div class="col-md-12 team-block">
+                                    <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                                        data-wow-duration="1500ms"
+                                        >
+                                        <div class="inner-box custom-post original-post">
+                                            <div class="row h-100">
+                                                <div class="col-5 bg-style"
+                                                    style="background-image: url(/images/articles/{{ $articles[1]->img }})"></div>
+                                                <div class="col-7 d-flex align-items-center">
+                                                    <div class="post-content">
+                                                        <p class="date"> 2022 ،مايو 29 </p>
+                                                        <h6 class="f-bold"> <a href="{{ route('article', $articles[1]->slug) }}" >  {{ $articles[1]->title }} </a> </h6>
+                                                        <p> {{ $articles[1]->summary }} </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-12 team-block" style="margin-top: 40px">
-                                <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
-                                    data-wow-duration="1500ms"
-                                    >
-                                    <div class="inner-box custom-post original-post">
-                                        <div class="row h-100">
-                                            <div class="col-5 bg-style"
-                                                style="background-image: url(/images/articles/{{ $articles[2]->img }})"></div>
-                                            <div class="col-7 d-flex align-items-center">
-                                                <div class="post-content">
-                                                    <p class="date"> 2022 ،مايو 29 </p>
-                                                    <h6 class="f-bold"> <a href="{{ route('article', $articles[2]->slug) }}" >  {{ $articles[2]->title }} </a> </h6>
-                                                    <p> {{ $articles[2]->summary }} </p>
+                                <div class="col-md-12 team-block" style="margin-top: 40px">
+                                    <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                                        data-wow-duration="1500ms"
+                                        >
+                                        <div class="inner-box custom-post original-post">
+                                            <div class="row h-100">
+                                                <div class="col-5 bg-style"
+                                                    style="background-image: url(/images/articles/{{ $articles[2]->img }})"></div>
+                                                <div class="col-7 d-flex align-items-center">
+                                                    <div class="post-content">
+                                                        <p class="date"> 2022 ،مايو 29 </p>
+                                                        <h6 class="f-bold"> <a href="{{ route('article', $articles[2]->slug) }}" >  {{ $articles[2]->title }} </a> </h6>
+                                                        <p> {{ $articles[2]->summary }} </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        @endif
 
     </div>
 @endsection

@@ -30,6 +30,7 @@ class StoreServiceRequest extends FormRequest
             'seo_title'       => ['required' , 'string' , 'max:500'],
             'seo_description' => ['required' , 'string' , 'max:1000'],
             'seo_keywords'    => ['required' , 'string' , 'max:1000'],
+            'visibility'      => ['required' , 'numeric' , 'digits_between:1,11' ],
             'content'         => ['required' , 'string' ],
             'icon'            => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],
             'img'             => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],

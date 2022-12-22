@@ -98,6 +98,14 @@ Route::group([ "prefix" => "admin" , "as" => "admin." ] , function(){
     Route::get('service/destroy/{id}' , [App\Http\Controllers\Admin\ServiceController::class, 'destroy'] )->name("service.destroy");
 
 
+    // offer
+    Route::get('offer/perPage/{num}' , [App\Http\Controllers\Admin\OfferController::class, 'perPage'])->name("offer.perPage");
+    Route::post('offer/search' , [App\Http\Controllers\Admin\OfferController::class, 'search'])->name("offer.search");
+    Route::post('offer/multiAction' , [App\Http\Controllers\Admin\OfferController::class, 'multiAction'])->name("offer.multiAction");
+    Route::resource('offer', App\Http\Controllers\Admin\OfferController::class);
+    Route::get('offer/destroy/{id}' , [App\Http\Controllers\Admin\OfferController::class, 'destroy'] )->name("offer.destroy");
+
+
     // Appointment
     Route::get('appointment/perPage/{num}' , [App\Http\Controllers\Admin\AppointmentController::class, 'perPage'])->name("appointment.perPage");
     Route::post('appointment/search' , [App\Http\Controllers\Admin\AppointmentController::class, 'search'])->name("appointment.search");

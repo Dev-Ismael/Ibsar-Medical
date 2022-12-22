@@ -190,6 +190,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ route('admin.offer.index') }}"
+                            class="nav-link {{ Request::is('*/offer*') ? 'active' : '' }}">
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-gift"></i>
+                            </span>
+                            <span class="sidebar-text">Offers</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{ route('admin.appointment.index') }}"
                             class="nav-link {{ Request::is('*/appointment*') ? 'active' : '' }}">
                             <span class="sidebar-icon">

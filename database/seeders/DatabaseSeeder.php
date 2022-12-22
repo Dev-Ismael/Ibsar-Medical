@@ -64,6 +64,17 @@ class DatabaseSeeder extends Seeder
             'img' => 'img',
         ]);
 
+        \App\Models\Offer::factory(5)->create([
+            'title' => 'title',
+            'slug' => 'slug',
+            'seo_title' => 'seo_title',
+            'seo_description' => 'seo_description',
+            'seo_keywords' => 'seo_keywords',
+            'summary' => 'summary',
+            'content' => 'content',
+            'img' => 'img',
+        ]);
+
 
         \App\Models\Testimonial::factory()->create([
             'name' => 'Ahmed',
