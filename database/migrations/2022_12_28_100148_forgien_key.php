@@ -29,6 +29,14 @@ return new class extends Migration
             ->onDelete("cascade")
             ->onUpdate("cascade");
         });
+        ################ Order ###################
+        Schema::table('orders', function (Blueprint $table) {
+            $table->foreign("offer_id")
+            ->references('id')
+            ->on("offers")
+            ->onDelete("cascade")
+            ->onUpdate("cascade");
+        });
     }
 
     /**

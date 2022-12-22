@@ -106,6 +106,14 @@ Route::group([ "prefix" => "admin" , "as" => "admin." ] , function(){
     Route::get('offer/destroy/{id}' , [App\Http\Controllers\Admin\OfferController::class, 'destroy'] )->name("offer.destroy");
 
 
+    // order
+    Route::get('order/perPage/{num}' , [App\Http\Controllers\Admin\OrderController::class, 'perPage'])->name("order.perPage");
+    Route::post('order/search' , [App\Http\Controllers\Admin\OrderController::class, 'search'])->name("order.search");
+    Route::post('order/multiAction' , [App\Http\Controllers\Admin\OrderController::class, 'multiAction'])->name("order.multiAction");
+    Route::resource('order', App\Http\Controllers\Admin\OrderController::class);
+    Route::get('order/destroy/{id}' , [App\Http\Controllers\Admin\OrderController::class, 'destroy'] )->name("order.destroy");
+
+
     // Appointment
     Route::get('appointment/perPage/{num}' , [App\Http\Controllers\Admin\AppointmentController::class, 'perPage'])->name("appointment.perPage");
     Route::post('appointment/search' , [App\Http\Controllers\Admin\AppointmentController::class, 'search'])->name("appointment.search");

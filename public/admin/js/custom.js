@@ -63,9 +63,13 @@ $(document).ready(function () {
     $("select#category").select2( {
         placeholder: "Choose Article Category...",
     });
-    // Article , Pin
+    // member , Appointment
     $("select#member_id").select2( {
         placeholder: "Choose Appointment Doctor...",
+    });
+    // Offer , Order
+    $("select#offer_id").select2( {
+        placeholder: "Choose Offer...",
     });
     // member , slider_show
     $("select#slider_show").select2( {

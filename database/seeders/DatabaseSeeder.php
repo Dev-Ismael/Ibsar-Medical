@@ -75,6 +75,13 @@ class DatabaseSeeder extends Seeder
             'img' => 'img',
         ]);
 
+        \App\Models\Order::factory(5)->create([
+            'username' => 'username',
+            'email' => 'email',
+            'phone' => 'phone',
+            'offer_id' => 1,
+        ]);
+
 
         \App\Models\Testimonial::factory()->create([
             'name' => 'Ahmed',
