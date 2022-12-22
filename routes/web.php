@@ -31,20 +31,18 @@ Route::get('/services', [App\Http\Controllers\ServiceController::class, 'index']
 Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'show'])->name('service.show');
 
 
-
 // subscribe
 Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');
 
+// Offer
+Route::get('/offers', [App\Http\Controllers\OfferController::class, 'index'])->name('offer.index');
+Route::get('/offers/{slug}', [App\Http\Controllers\OfferController::class, 'show'])->name('offer.show');
 
 // Blog
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 Route::post('/blog/search', [App\Http\Controllers\BlogController::class, 'search'])->name('blog.search');
 Route::get('/{slug}', [App\Http\Controllers\BlogController::class, 'article'])->name('article');
 
-
-// Route::get('/test', function () {
-//     return view("submission");
-// });
 
 
 
