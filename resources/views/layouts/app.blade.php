@@ -129,6 +129,7 @@
                                     <li><a href="{{ route("about") }}">من نحن</a></li>
                                     <li><a href="{{ route("member.index") }}">الطاقم الطبي</a></li>
                                     <li><a href="{{ route("offer.index") }}">العروض</a></li>
+                                    <li><a href="{{ route("responsibility.index") }}">المسؤوليات المجتمعية</a></li>
                                     <li><a href="/#book-appointment">حجز موعد</a></li>
                                 </ul>
                             </div>

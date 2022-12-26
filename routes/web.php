@@ -30,6 +30,10 @@ Route::get('/members', [App\Http\Controllers\MemberController::class, 'index'])-
 Route::get('/services', [App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');
 Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'show'])->name('service.show');
 
+// responsibilities
+Route::get('/responsibilities', [App\Http\Controllers\ResponsibilityController::class, 'index'])->name('responsibility.index');
+Route::get('/responsibility/{slug}', [App\Http\Controllers\ResponsibilityController::class, 'show'])->name('responsibility.show');
+
 
 // subscribe
 Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');

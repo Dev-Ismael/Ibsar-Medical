@@ -27,7 +27,7 @@
                             data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="icon-box">
-                                    <img src="{{ asset('images/services/' . $service->icon) }}" width="120"
+                                    <img src="{{ asset('images/services/' . $service->icon) }}"  height="320" class="rounded"
                                         alt="service-icon">
                                 </div>
                                 <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }} </a></h4>

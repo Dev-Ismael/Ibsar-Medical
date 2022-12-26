@@ -3,84 +3,34 @@
 namespace App\Http\Controllers;
 
 use App\Models\Responsibility;
-use App\Http\Requests\StoreResponsibilityRequest;
-use App\Http\Requests\UpdateResponsibilityRequest;
+use App\Traits\SEOTrait;
 
 class ResponsibilityController extends Controller
 {
+    use SEOTrait;
+
     /**
-     * Display a listing of the resource.
+     * Show the application dashboard.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
-        //
+        $responsibilities = Responsibility::get();
+        return view('responsibilities',compact("responsibilities"));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function show($slug)
     {
-        //
-    }
+        $responsibility = Responsibility::where('slug',$slug)->first();
+        // if responsibility Not Found
+        if( !$responsibility ){
+            return redirect('/');
+        }
+        // SEO Trait
+        $this->dynamicPagesSeo($responsibility);
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreResponsibilityRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreResponsibilityRequest $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Responsibility  $responsibility
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Responsibility $responsibility)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Responsibility  $responsibility
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Responsibility $responsibility)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateResponsibilityRequest  $request
-     * @param  \App\Models\Responsibility  $responsibility
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateResponsibilityRequest $request, Responsibility $responsibility)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Responsibility  $responsibility
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Responsibility $responsibility)
-    {
-        //
+        return view('responsibility',compact("responsibility"));
     }
 }

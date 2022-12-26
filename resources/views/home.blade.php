@@ -149,7 +149,7 @@
                                     >
                                     <div class="inner-box">
                                         <div class="icon-box">
-                                            <img src="{{ asset("images/services/". $service->icon ) }}" width="120" alt="service-icon">
+                                            <img src="{{ asset("images/services/". $service->img ) }}"  height="360" class="rounded" alt="service-icon">
                                         </div>
                                         <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }} </a></h4>
                                         <p> {{ $service->summary }} </p>
@@ -219,7 +219,7 @@
                                     >
                                     <div class="inner-box text-center">
                                         <figure class="image-box">
-                                            <img src="{{ asset('images/members/'. $member->img) }}" alt="">
+                                            <img src="{{ asset('images/members/'. $member->img) }}" style="height: 320px !important" alt="member-image">
                                         </figure>
                                         <div class="lower-content">
                                             <h4>{{ $member->name }}</h4>

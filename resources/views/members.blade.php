@@ -23,13 +23,13 @@
             <div class="row clearfix">
 
                 @foreach ( $members as $member )
-                    <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="col-lg-4 col-md-6 col-sm-12 team-block mt-5">
                         <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
                             data-wow-duration="1500ms"
                             >
                             <div class="inner-box text-center">
                                 <figure class="image-box">
-                                    <img src="{{ asset('images/members/'. $member->img) }}" alt="">
+                                    <img src="{{ asset('images/members/'. $member->img) }}" style="height: 320px !important" alt="member-image">
                                 </figure>
                                 <div class="lower-content">
                                     <h4>{{ $member->name }}</h4>

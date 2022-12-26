@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2022 at 06:52 AM
+-- Generation Time: Dec 26, 2022 at 11:04 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.5
 
@@ -66,22 +66,9 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`id`, `category_id`, `title`, `slug`, `summary`, `content`, `seo_title`, `seo_description`, `seo_keywords`, `pinned`, `author`, `img`, `created_at`, `updated_at`) VALUES
-(1, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(2, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(3, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(4, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(5, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(6, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(7, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(8, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(9, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(10, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(11, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(12, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(13, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(14, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(15, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43'),
-(16, 1, 'title', 'title', 'summary', '<p>content</p>', 'seo_title', 'seo_description', 'seo_keywords', '0', 'author', '1671309943.png', '2022-12-17 18:37:25', '2022-12-17 18:45:43');
+(17, 2, 'تصحيح النظر', 'tshyh-alnthr', 'تصحيح النظر: جراحات عمليات تصحيح النظر لها عدة أنواع التي...', '<p>تصحيح النظر: جراحات عمليات تصحيح النظر لها عدة أنواع التي تعمل على إعادة تشكيل القرنية من أجل السماح للضوء بالمرور عبرها وهي تفيد حالات قصر النظر وطول النظر والاستجماتيزم . في الإبصار الطبية نقدم أحدث التقنيات وأعلى دقة في علاج اضطرابات النظر .</p>', 'تصحيح النظر', 'تصحيح النظر', 'تصحيح النظر', '1', 'someone', '1672087278.jpg', '2022-12-26 18:41:18', '2022-12-26 18:41:18'),
+(18, 3, 'الماء البيضاء', 'almaaa-albydaaa', 'الماء الأبيض (الساد) ويسمى أيضاً (الكتاراكت) وهو عتامة عدسة العين...', '<p>الماء الأبيض (الساد) ويسمى أيضاً (الكتاراكت) وهو عتامة عدسة العين أي تعكر في عدسة العين السليمة لتصبح الرؤية غير واضحة ؛ حيث تكون الرؤية غائمة تشبه النظر من نافذة ضبابية أو النظر من العدسات الزجاجية الذي يوجد على سطحه بخار ماء. نستخدم في الإبصار الطبية جهاز الفاكو بتقنية الترددات الصوتية أو الليزر لعلاج الماء الأبيض.</p>', 'الماء البيضاء', 'الماء البيضاء', 'الماء البيضاء', '1', 'someone', '1672088815.jpg', '2022-12-26 18:42:53', '2022-12-26 19:06:55'),
+(19, 2, 'تصحيح النظر', 'tshyh-alnthr', 'تصحيح النظر: جراحات عمليات تصحيح النظر لها عدة أنواع التي...', '<p>تصحيح النظر: جراحات عمليات تصحيح النظر لها عدة أنواع التي تعمل على إعادة تشكيل القرنية من أجل السماح للضوء بالمرور عبرها وهي تفيد حالات قصر النظر وطول النظر والاستجماتيزم . في الإبصار الطبية نقدم أحدث التقنيات وأعلى دقة في علاج اضطرابات النظر .</p>', 'تصحيح النظر', 'تصحيح النظر', 'تصحيح النظر', '1', 'someone', '1672087278.jpg', '2022-12-26 18:41:18', '2022-12-26 18:41:18');
 
 -- --------------------------------------------------------
 
@@ -102,7 +89,8 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `title`, `slug`, `created_at`, `updated_at`) VALUES
-(1, 'title', 'slug', '2022-12-17 18:37:25', '2022-12-17 18:37:25');
+(2, 'الاخبار', 'alakhbar', '2022-12-26 18:38:45', '2022-12-26 18:38:45'),
+(3, 'المدونة', 'almdon', '2022-12-26 18:38:56', '2022-12-26 18:38:56');
 
 -- --------------------------------------------------------
 
@@ -184,7 +172,10 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (128, '2022_07_31_080523_create_newsletters_table', 2),
 (129, '2022_07_31_080554_create_subscribers_table', 2),
 (130, '2022_08_13_181407_create_appointments_table', 2),
-(131, '2022_12_28_100148_forgien_key', 2);
+(131, '2022_12_28_100148_forgien_key', 2),
+(132, '2022_12_22_074255_create_offers_table', 3),
+(133, '2022_12_22_100453_create_orders_table', 3),
+(134, '2022_12_26_180609_create_responsibilities_table', 3);
 
 -- --------------------------------------------------------
 
@@ -206,6 +197,42 @@ CREATE TABLE `newsletters` (
 
 INSERT INTO `newsletters` (`id`, `subject`, `content`, `created_at`, `updated_at`) VALUES
 (1, 'subject', 'content', '2022-12-17 18:37:25', '2022-12-17 18:37:25');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `offers`
+--
+
+CREATE TABLE `offers` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `seo_title` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `seo_description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `seo_keywords` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `summary` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `offer_id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -240,6 +267,41 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `responsibilities`
+--
+
+CREATE TABLE `responsibilities` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `seo_title` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `seo_description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `seo_keywords` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `summary` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `visibility` varchar(1) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1',
+  `img` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `responsibilities`
+--
+
+INSERT INTO `responsibilities` (`id`, `title`, `slug`, `seo_title`, `seo_description`, `seo_keywords`, `summary`, `content`, `visibility`, `img`, `created_at`, `updated_at`) VALUES
+(1, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(9, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(10, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(11, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(12, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(13, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(14, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44'),
+(15, 'حملة إغاثة', 'hml-aghath', 'حملة إغاثة', 'حملة إغاثة', 'حملة إغاثة', 'سعياً منّا لتطبيق قوله صلى الله عليه وسلم...', '<p><a href=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\"><img alt=\"\" src=\"&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZAp9eJ5NmDI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;\" /></a>سعياً منّا لتطبيق قوله صلى الله عليه وسلم ( يا رسول الله ! أيُّ الناس أحبُّ إلى الله ؟ فقال : أحبُّ الناس إلى الله أنفعهم للناس، وأحبُّ الأعمال إلى الله عز وجل، سرور تدخله على مسلم، تكشف عنه كربة، أو تقضي عنه دينا، أو تطرد عنه جوعا، ولأن أمشي مع أخ في حاجة، أحبُّ إلي من أن أعتكف في هذا المسجد، يعني مسجد المدينة شهرا&hellip;) رواه الطبراني ولأنّ رؤيتنا تنطلق من قناعة راسخة بأن طب وجراحة العيون هو رسالة تؤدى وليست مهنة بمقابل لِتسمو هذه الرسالة بالشراكة مع المجتمع بالداخل و الخارج لتبرز الإنسانية في أجمل صورها و تبلغ تعاليم ديننا الحنيف في أبلغ معانية من خلال شراكات متعددة لرؤية أجمل . ومن جانب أوجه الشراكة المجتمعية لشركة الإبصار الطبية شاركنا مع مؤسسة البصر الخيرية ومركز الملك سلمان للإغاثة من خلال التطوع في علاج المحتاجين في الدول الفقيرة حيث تقام العديد من المخيمات الجراحية والعيادات المجانية لمحاربة العمى ورسم البسمة على المحتاجين وذلك من خلال دعم شركائنا في هذا المجال</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>', '1', '6519960.jpg', '2022-12-26 17:07:39', '2022-12-26 18:36:44');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `services`
 --
 
@@ -253,11 +315,25 @@ CREATE TABLE `services` (
   `summary` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `visibility` varchar(1) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1',
-  `icon` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `img` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `title`, `slug`, `seo_title`, `seo_description`, `seo_keywords`, `summary`, `content`, `visibility`, `img`, `created_at`, `updated_at`) VALUES
+(2, 'تصحيح النظر', 'tshyh-alnthr', 'تصحيح النظر', 'تصحيح النظر', 'تصحيح النظر', 'تصحيح النظر: جراحات عمليات تصحيح النظر لها عدة أنواع التي...', '<p>تصحيح النظر: جراحات عمليات تصحيح النظر لها عدة أنواع التي تعمل على إعادة تشكيل القرنية من أجل السماح للضوء بالمرور عبرها وهي تفيد حالات قصر النظر وطول النظر والاستجماتيزم . في الإبصار الطبية نقدم أحدث التقنيات وأعلى دقة في علاج اضطرابات النظر .</p>\r\n\r\n<ul>\r\n	<li>الفيمتو ليزك (Femto Lasik)</li>\r\n	<li>الليزك (LASIK)</li>\r\n	<li>ترانس إبيثيليوم (TPRK)</li>\r\n	<li>لازيك (Lasik )</li>\r\n	<li>كونتورا ليزك (Contoura LASIK)</li>\r\n	<li>التصحيح ببصمة العين ( Customized Laser)</li>\r\n	<li>زراعة العدسات التصحيحية (ICL)</li>\r\n	<li>حلقات القرنية (Corneal rings)</li>\r\n	<li>تثبيت القرنية المخروطية ( Keratoconus Crosslinking )</li>\r\n</ul>', '1', '8465321.jpg', '2022-12-26 19:15:20', '2022-12-26 19:15:20'),
+(3, 'الماء الأبيض', 'almaaa-alabyd', 'الماء الأبيض', 'الماء الأبيض', 'الماء الأبيض', 'الماء الأبيض (الساد) ويسمى أيضاً (الكتاراكت) وهو عتامة عدسة العين و...', '<p>الماء الأبيض (الساد) ويسمى أيضاً (الكتاراكت) وهو عتامة عدسة العين و تعكر في عدسة العين السليمة لتصبح الرؤية غير واضحة ؛ حيث تكون الرؤية غائمة تشبه النظر من نافذة ضبابية أو النظر من العدسات الزجاجية الذي يوجد على سطحها بخار ماء.<br />\r\n<br />\r\nنستخدم في الإبصار الطبية جهاز الفاكو بتقنية الترددات الصوتية أو الليزر لعلاج الماء الأبيض.</p>', '1', '7483906.jpg', '2022-12-26 19:17:56', '2022-12-26 19:17:56'),
+(4, 'الماء الأزرق( الجلوكوما)', 'almaaa-alazrk-alglokoma', 'الماء الأزرق( الجلوكوما)', 'الماء الأزرق( الجلوكوما)', 'الماء الأزرق( الجلوكوما)', 'الماء الأزرق (الجلوكوما): المياه الزرقاء أو الجلوكوما هي أحد الأمراض...', '<p>الماء الأزرق (الجلوكوما): المياه الزرقاء أو الجلوكوما هي أحد الأمراض التي تصيب العين التي تحدث نتيجة ارتفاع الضغط داخل العين بصورة غير طبيعية ويتسبب ذلك في تآكل أنسجة العصب البصري ، وهو العصب المسؤول عن حمل المعلومات من العين إلى الدماغ , مما قد يتسبب في إصابة المريض بالعمى أو فقدان البصر التام في غضون بضع سنوات.<br />\r\nنستخدم في الإبصار الطبية علاج الجلوكوما بدون جراحة بتقنية Micropulse Cyclo G6 .</p>', '1', '5274162.jpg', '2022-12-26 19:20:16', '2022-12-26 19:20:16'),
+(5, 'الشبكية', 'alshbky', 'الشبكية', 'الشبكية', 'الشبكية', 'الشبكية (Retina) هي طبقة نسيجية شفافة ورقيقة تبطّن قاع العين...', '<p>الشبكية (Retina) هي طبقة نسيجية شفافة ورقيقة تبطّن قاع العين من الداخل، وتقع قريبة من العصب البصري , ودورها تحويل أشعة الضوء المنعكسة إلى إشارات ترسل إلى المخ والذي يفسرها إلى صورة مرئية , وعندما يتسبب أمر ما في الشبكية فقد يؤدي إلى تراجع قدرة النظر وفي بعض الأحيان الإصابة بالعمى .<br />\r\nنعالج في الإبصار الطبية حالات انفصال الشبكية ، إزالة النزيف الدموي ، اعتلال الشبكية الناتج عن مرض السكر و أيضاً الجسم الزجاجي.</p>', '1', '8105479.jpg', '2022-12-26 19:31:56', '2022-12-26 19:31:56'),
+(6, 'القرنية', 'alkrny', 'القرنية', 'القرنية', 'القرنية', 'القرنية هي نسيج شفاف مقوس تقع في مقدمة العين من القزحية و الحدق... .', '<p>القرنية هي نسيج شفاف مقوس تقع في مقدمة العين من القزحية و الحدقة ، وبسبب الشفافية لديها قدرة على كسر الضوء .</p>\r\n\r\n<p>تتكون القرنية من خلايا و بروتين و سائل وقد تبدو هشة إلا أنها صلبة ولكنها حساسة للمس .</p>\r\n\r\n<p>نعالج في الإبصار الطبية الحالات التالية:</p>\r\n\r\n<p>● التهاب القرنية</p>\r\n\r\n<p>● خدوش القرنية</p>\r\n\r\n<p>● القرنية المخروطية</p>\r\n\r\n<p>● ندبات القرنية</p>\r\n\r\n<p>● الاجسام الغريبة في القرنية</p>\r\n\r\n<p>● زراعة القرنية</p>', '1', '2536819.jpg', '2022-12-26 19:35:19', '2022-12-26 19:35:19'),
+(7, 'أعصاب العيون', 'aaasab-alaayon', 'أعصاب العيون', 'أعصاب العيون', 'أعصاب العيون', 'نقدم الخدمات التشخيصية والعلاجية للأمراض المتعلقة بأعصاب...', '<p>نقدم الخدمات التشخيصية والعلاجية للأمراض المتعلقة بأعصاب العيون و هي أمراض متعلقة بالعصب البصري أو الجهاز العصبي التي تسبب في فقدان البصر إضافة إلى الحالات المرضية التي تكون سبب في اضطراب حركة العين و الرؤية المزدوجة.</p>', '1', '2072242.png', '2022-12-26 19:39:57', '2022-12-26 19:39:57'),
+(8, 'تجميل العيون', 'tgmyl-alaayon', 'تجميل العيون', 'تجميل العيون', 'تجميل العيون', 'من الخدمات التي تقدم في قسم جراحة تجميل العيون....', '<p>من الخدمات التي تقدم في قسم جراحة تجميل العيون :<br />\r\n● علاج ارتخاء الجفون<br />\r\n● علاج انقلاب الجفون<br />\r\n● إزالة الأكياس الدهنية<br />\r\n● الحشوات التجميلية</p>', '1', '3261890.jpg', '2022-12-26 19:42:07', '2022-12-26 19:42:07'),
+(9, 'عيون الأطفال و الحول', 'aayon-alatfal-o-alhol', 'عيون الأطفال و الحول', 'عيون الأطفال و الحول', 'عيون الأطفال و الحول', 'نوفر التشخيص المبكر لعيوب الإبصار عند الأطفال بأحدث التقنيات....', '<p>نوفر التشخيص المبكر لعيوب الإبصار عند الأطفال بأحدث التقنيات لعلاج :<br />\r\n● حالات كسل العين<br />\r\n● الأمراض الخلقية و الوراثية<br />\r\n● حالات الحول</p>', '1', '2418169.jpg', '2022-12-26 19:46:31', '2022-12-26 19:46:31'),
+(10, 'البصريات', 'albsryat', 'البصريات', 'البصريات', 'البصريات', 'متجر الإبصار الطبية للبصريات يضم مجموعة واسعة من النظارات الأنيقة....', '<p>متجر الإبصار الطبية للبصريات يضم مجموعة واسعة من النظارات الأنيقة تلبي مختلف الاحتياجات و ترضي مختلف الأذواق اطلب الآن!</p>', '1', '3558239.png', '2022-12-26 19:47:55', '2022-12-26 19:47:55');
 
 -- --------------------------------------------------------
 
@@ -418,6 +494,21 @@ ALTER TABLE `newsletters`
   ADD KEY `newsletters_subject_index` (`subject`);
 
 --
+-- Indexes for table `offers`
+--
+ALTER TABLE `offers`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `offers_title_index` (`title`),
+  ADD KEY `offers_slug_index` (`slug`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `orders_email_index` (`email`);
+
+--
 -- Indexes for table `password_resets`
 --
 ALTER TABLE `password_resets`
@@ -430,6 +521,14 @@ ALTER TABLE `personal_access_tokens`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
+
+--
+-- Indexes for table `responsibilities`
+--
+ALTER TABLE `responsibilities`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `responsibilities_title_index` (`title`),
+  ADD KEY `responsibilities_slug_index` (`slug`);
 
 --
 -- Indexes for table `services`
@@ -480,13 +579,13 @@ ALTER TABLE `appointments`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -504,7 +603,7 @@ ALTER TABLE `members`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
 
 --
 -- AUTO_INCREMENT for table `newsletters`
@@ -513,16 +612,34 @@ ALTER TABLE `newsletters`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `offers`
+--
+ALTER TABLE `offers`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `responsibilities`
+--
+ALTER TABLE `responsibilities`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `settings`

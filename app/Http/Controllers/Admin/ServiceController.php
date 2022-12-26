@@ -65,21 +65,15 @@ class ServiceController extends Controller
         $img_extention = $request -> img -> getClientOriginalExtension();
         $img_name = rand(1000000,10000000) . "." . $img_extention;   // name => 32632.png
 
-        // Create icon name
-        $icon_extention = $request -> icon -> getClientOriginalExtension();
-        $icon_name = rand(1000000,10000000) . "." . $icon_extention;   // name => 3623628.png
-
         // Path
         $path = "images/services" ;
 
         // Upload
         $request -> img -> move( $path , $img_name );
-        $request -> icon  -> move( $path , $icon_name );
 
 
         // Add images names in request array
         $requestData['img']  = $img_name;
-        $requestData['icon'] = $icon_name;
 
 
         // add slug in $requestData Array
@@ -148,15 +142,6 @@ class ServiceController extends Controller
         // Check If There Images Uploaded
         $path = "images/services" ;
 
-        if( $request -> hasFile("icon") ){
-            //  Upload image & Create name icon
-            $icon_extention = $request -> icon -> getClientOriginalExtension();
-            $icon_name = rand(1000000,10000000) . "." . $icon_extention;   // name => 3628.png
-            $request -> icon -> move( $path , $icon_name );
-        }else{
-            $icon_name = $service->icon;
-        }
-
         if( $request -> hasFile("img") ){
             //  Upload image & Create name img
             $img_extention = $request -> img -> getClientOriginalExtension();
@@ -168,7 +153,6 @@ class ServiceController extends Controller
 
         // Add images names in request array
         $requestData['img']  = $img_name;
-        $requestData['icon'] = $icon_name;
 
 
         // add slug in $requestData Array

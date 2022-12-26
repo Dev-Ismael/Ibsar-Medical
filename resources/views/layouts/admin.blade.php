@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#2a8e82">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('admin/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('front/images/favicon.png') }}">
 
     <!------- FontAwesome  ------->
     <script src="https://kit.fontawesome.com/bc98e6aa51.js" crossorigin="anonymous"></script>
