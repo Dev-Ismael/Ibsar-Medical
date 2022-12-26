@@ -95,6 +95,13 @@ Route::group([ "prefix" => "admin" , "as" => "admin." ] , function(){
     Route::resource('service', App\Http\Controllers\Admin\ServiceController::class);
     Route::get('service/destroy/{id}' , [App\Http\Controllers\Admin\ServiceController::class, 'destroy'] )->name("service.destroy");
 
+    // responsibility
+    Route::get('responsibility/perPage/{num}' , [App\Http\Controllers\Admin\ResponsibilityController::class, 'perPage'])->name("responsibility.perPage");
+    Route::post('responsibility/search' , [App\Http\Controllers\Admin\ResponsibilityController::class, 'search'])->name("responsibility.search");
+    Route::post('responsibility/multiAction' , [App\Http\Controllers\Admin\ResponsibilityController::class, 'multiAction'])->name("responsibility.multiAction");
+    Route::resource('responsibility', App\Http\Controllers\Admin\ResponsibilityController::class);
+    Route::get('responsibility/destroy/{id}' , [App\Http\Controllers\Admin\ResponsibilityController::class, 'destroy'] )->name("responsibility.destroy");
+
 
     // offer
     Route::get('offer/perPage/{num}' , [App\Http\Controllers\Admin\OfferController::class, 'perPage'])->name("offer.perPage");

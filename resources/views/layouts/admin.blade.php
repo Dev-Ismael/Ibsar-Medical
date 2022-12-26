@@ -245,6 +245,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ route('admin.responsibility.index') }}"
+                            class="nav-link {{ Request::is('*/responsibility*') ? 'active' : '' }}">
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-hand-holding-hand"></i>
+                            </span>
+                            <span class="sidebar-text">Responsibilities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{ route('admin.testimonial.index') }}"
                             class="nav-link {{ Request::is('*/testimonial*') ? 'active' : '' }}">
                             <span class="sidebar-icon">
