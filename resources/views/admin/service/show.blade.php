@@ -64,14 +64,6 @@
                                             <td> {{ $service->summary != "" ? $service->summary : '-'  }} </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-capitalize"> <i class="fa-solid fa-image"></i> Icon </td>
-                                            <td class="service-image">
-                                                <a class="show-img-container" href="{{ asset('images/services/'.$service->icon) }}" target="_blank">
-                                                    <img src="{{ asset('images/services/'.$service->icon) }}" alt="service-image" style="width:80px !important">
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td class="text-capitalize content"> <i class="fa-solid fa-align-left"></i> Content </td>
                                             <td> {!! $service->content !!} </td>
                                         </tr>

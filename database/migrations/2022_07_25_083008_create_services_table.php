@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('summary', 255 );
             $table->text('content');
             $table->string('visibility', 1 )->default('1');
-            $table->string('icon');
             $table->string('img');
             $table->timestamps();
         });

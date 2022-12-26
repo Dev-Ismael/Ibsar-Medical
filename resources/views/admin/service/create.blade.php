@@ -119,15 +119,6 @@
                                         </div>
 
 
-                                        <!----------------- icon -------------------->
-                                        <div class="mb-3 input-content">
-                                            <label for="icon" class="form-label"> <i class="fa-solid fa-image"></i> Icon </label>
-                                            <input name="icon" type="file" class="form-control @error('icon') is-invalid @enderror" id="icon"  />
-                                            @error('icon')
-                                                <small class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
-                                        </div>
-
                                         <!----------------- Img -------------------->
                                         <div class="mb-3 input-content">
                                             <label for="img" class="form-label"> <i class="fa-solid fa-image"></i> Image </label>

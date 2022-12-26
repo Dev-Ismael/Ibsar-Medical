@@ -117,22 +117,6 @@
                                         </div>
 
 
-                                        <!----------------- Icon -------------------->
-                                        <div class="mb-3 input-content">
-                                            <label for="icon" class="form-label d-flex align-items-center">
-                                                <i class="fa-solid fa-image"></i> &nbsp;  Icon
-                                                <div class="show-img-container">
-                                                    <a href="{{ asset("images/services/".$service->icon) }}"  target="_blank">
-                                                        <img src="{{ asset("images/services/".$service->icon) }}" alt="service-icon">
-                                                    </a>
-                                                </div>
-                                            </label>
-                                            <input name="icon" type="file" class="form-control @error('icon') is-invalid @enderror" id="icon"  />
-                                            @error('icon')
-                                                <small class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
-                                        </div>
-
 
                                         <!----------------- Img -------------------->
                                         <div class="mb-3 input-content">
