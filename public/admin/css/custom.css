@@ -6,10 +6,10 @@
 /*=========== Css Vars ===========*/
 
 :root {
-    --blue: #045e90;
-    --blue_opacity: #045f902d;
-    --blue_light: #045f902c;
-    --blue_dark: #3387b2;
+    --blue: #3387b2;
+    --blue_opacity: #3388b23f;
+    --blue_light: #4c8eaf;
+    --blue_dark: #266a8b;
 }
 
 /*=========== Global Css ===========*/

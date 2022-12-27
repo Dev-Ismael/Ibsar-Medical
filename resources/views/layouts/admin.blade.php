@@ -111,7 +111,9 @@
                         <a href="{{ route('home') }}" class="nav-link text-center">
                             <span class="sidebar-icon brand-img">
                             </span>
-                            <span class="mt-1 sidebar-text">IBSAR Medical </span>
+                            <span class="mt-1 sidebar-text">
+                                <img src="{{ asset("front/images/logo-white.png") }}" class="img-fluid" alt="white-logo">
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item ">

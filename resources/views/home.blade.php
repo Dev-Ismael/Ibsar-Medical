@@ -13,7 +13,7 @@
                             <div class="col-lg-7 col-md-12 col-sm-12 image-column">
                                 <div class="image-box">
                                     <figure class="image"><img src="{{ asset('front/images/banner/banner-1.png') }}"
-                                            alt="">
+                                            alt="slider-img" class="slider-img">
                                     </figure>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                                 <div class="image-box">
                                     <figure class="image"><img src="{{ asset('front/images/banner/banner-1.png') }}"
-                                            alt="">
+                                        alt="slider-img" class="slider-img">
                                     </figure>
                                 </div>
                             </div>

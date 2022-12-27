@@ -497,7 +497,7 @@ img {
 }
 
 .pagination li a,
-.pagination li span{ 
+.pagination li span{
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -521,7 +521,7 @@ img {
 }
 
 .sec-pad{
-  padding: 143px 0px 150px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 .sec-pad-2{
@@ -712,12 +712,13 @@ img {
 
 .main-header .logo-box .logo{
   position: relative;
-  max-width: 240px;
-  width: 100%;
+  /* max-width: 240px;
+  width: 100%; */
 }
 
 .main-header .logo-box .logo img{
-  width: 100%;
+  /* width: 100%; */
+    height: 90px;
 }
 
 .main-header .header-upper .info-box li{
@@ -3136,12 +3137,12 @@ div#mCSB_1_container{
 }
 
 .footer-top .logo-widget .footer-logo .logo{
-  max-width: 200px;
-  width: 100%;
+  /* max-width: 200px;
+  width: 100%; */
 }
 
 .footer-top .logo-widget .footer-logo .logo img{
-  width: 100%;
+  /* width: 100%; */
 }
 
 .footer-top .logo-widget .text p{

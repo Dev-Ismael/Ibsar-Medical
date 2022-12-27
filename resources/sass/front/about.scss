@@ -1,0 +1,82 @@
+/*=======================================================
+============ About
+=======================================================*/
+#about-page {
+
+
+
+    .feature-box {
+        background-color: $blue-opacity;
+        padding: 20px;
+        border-radius: 20px;
+        color: #000;
+
+        h4 {
+            font-size: 28px;
+            padding-bottom: 5px;
+        }
+    }
+
+
+
+    .goal-vision {
+        h3 {
+            font-size: 26px;
+            font-weight: 800;
+            padding: 15px 0px;
+        }
+
+
+        .img-box {
+            span {
+                position: absolute;
+                top: -30px;
+                left: 30px;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: $blue;
+                color: #fff;
+            }
+
+            img {
+                width: 100% !important;
+                border-radius: 20px;
+            }
+        }
+
+        div.list {
+            h3 {
+                font-size: 26px;
+                font-weight: 800;
+
+            }
+            ul {
+                list-style: none;
+                font-size: 22px;
+                li{
+                    padding: 7px 0px;
+                }
+            }
+
+            ul li::before {
+                content: "\2022";
+                color: $blue;
+                font-weight: bold;
+                display: inline-block;
+                font-size: 60px;
+                width: 1.4em;
+                margin-left: -1em;
+                margin-top: 5px;
+                transform: translateY(20%);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}
