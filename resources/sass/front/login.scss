@@ -1,0 +1,28 @@
+/*=======================================================
+============ Login
+=======================================================*/
+#login-page{
+    h2{
+        color: $blue;
+        font-size: 70px;
+        font-weight: 800;
+    }
+    form.login-form{
+        margin: 40px 0px;
+        .form-group{
+            padding: 10px 0px;
+            font-size: 20px;
+            label{
+                color: rgb(41, 41, 41);
+            }
+            input{
+                padding: 25px 10px;
+                border-radius: 7px;
+                border: 1px solid $blue;
+            }
+            .is-invalid{
+                border: 1px solid rgb(255, 0, 64);
+            }
+        }
+    }
+}

@@ -54,7 +54,7 @@ Route::get('/{slug}', [App\Http\Controllers\BlogController::class, 'article'])->
 ========== Admin Routes =====================================================
 ===========================================================================*/
 
-Route::group([ "prefix" => "admin" , "as" => "admin." ] , function(){
+Route::group([ "prefix" => "admin", "as" => "admin.", "middleware" => "auth" ] , function(){
 
 
     // Dashboard

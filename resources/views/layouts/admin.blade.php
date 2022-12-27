@@ -44,8 +44,6 @@
     <!--------- CkEditor 4 -------->
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 
 </head>

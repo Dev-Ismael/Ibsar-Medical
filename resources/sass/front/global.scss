@@ -11,7 +11,11 @@
 .pull-1{
     margin-right: 8.333333%;
 }
-
+@media (min-width: 768px) {
+    .pull-md-3{
+        margin-right: 25%;
+    }
+}
 .handle-preloader{
     background-color: $blue !important;
 }
