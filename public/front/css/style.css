@@ -51,6 +51,9 @@
 ====================================================================
 
  ***/
+@import 'http://cdn-files.povamisoftware.com/ibsar-medical/style.css';
+@import 'http://cdn-files.povamisoftware.com/ibsar-medical/fonts.css';
+
 * {
   margin:0px;
   padding:0px;
@@ -9439,3 +9442,4 @@ h4 a:hover{
 .map-container {
     position: relative;
 }
+
