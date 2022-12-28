@@ -27,6 +27,23 @@
     }
 
 
+    /*=== Offers Section ====*/
+    .service-custom-section.offers{
+        .img-box{
+            width: 100%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            .inner-box{
+                background-color: transparent;
+                box-shadow: none;
+
+            }
+        }
+    }
+
     /*=== Testimoinal Section ====*/
     .testimonial-section .inner-content {
 

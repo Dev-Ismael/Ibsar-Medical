@@ -18,26 +18,23 @@
     </section>
 
     <!-- offers-section -->
-    <section class="service-custom-section section-padding">
+    <section class="service-custom-section offers section-padding">
         <div class="auto-container">
             <div class="row clearfix">
-                @foreach ($offers as $offer)
+                {{-- @foreach ($offers as $offer) --}}
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
                             data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <div class="icon-box">
-                                    <img src="{{ asset('images/offers/' . $offer->icon) }}" width="120"
-                                        alt="offer-icon">
-                                </div>
-                                <h4><a href="{{ route('offer.show', $offer->slug) }}"> {{ $offer->title }} </a></h4>
-                                <p> {{ $offer->summary }} </p>
-                                <div class="btn-box mt-5"><a href="{{ route('offer.show', $offer->slug) }}"
+                                <div class="img-box" style="background-image: url('/front/images/resource/about-1.jpg');"></div>
+                                <h4 class="summary"><a href="#"> as </a></h4>
+                                <p>  </p>
+                                <div class="btn-box mt-5"><a href="#"
                                         class="theme-btn-one">المزيد</a></div>
                             </div>
                         </div>
                     </div>
-                @endforeach
+                {{-- @endforeach --}}
             </div>
         </div>
     </section>

@@ -22,4 +22,13 @@
         </div>
     </section>
 
+
+    <section class="sec-pad">
+        <div class="auto-container">
+            <div class="btn-box mt-5"><a href="http://wa.me/966506749629"
+                class="theme-btn-one">احصل علي العرض</a></div>
+
+        </div>
+    </section>
+
 @endsection
