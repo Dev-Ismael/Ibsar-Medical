@@ -4,7 +4,7 @@
     <div id="about-page">
 
         <!-- page-title -->
-        <section class="page-title centred" style="background-image: url(front/images/background/page-title.jpg);">
+        <section class="page-title centred" style="background-image: url(front/images/background/testimonial-1.jpg);">
             <div class="auto-container">
                 <div class="content-box">
                     <div class="inner-box">
@@ -21,7 +21,7 @@
         <section class="about-style-four sec-pad">
             <div class="auto-container">
                 <div class="row clearfix">
-                    <div class="text-right">
+                    <div class="col-12 text-right">
                         <h1 class="font-blue pb-4">عن الشركة</h1>
                         <h3 class="cta-section">نسعى أّن نكون الاختيار الأول دائمًا على مستوى الشرق الأوسط</h3>
                         <p class="pt-2">
@@ -103,13 +103,13 @@
                     <div class="col-md-6 mt-5">
                         <div class="img-box">
                             <span>.01</span>
-                            <img src="{{ asset("front/images/about/about-1.png") }}" class="img-fluid" alt="about-us">
+                            <img src="{{ asset("front/images/about/about-1.jpg") }}" class="img-fluid" alt="about-us">
                         </div>
                     </div>
                     <div class="col-md-6 mt-5">
                         <div class="img-box">
                             <span>.02</span>
-                            <img src="{{ asset("front/images/about/about-2.png") }}" class="img-fluid" alt="about-us">
+                            <img src="{{ asset("front/images/about/about-2.jpg") }}" class="img-fluid" alt="about-us">
                         </div>
                     </div>
                     <div class="col-md-6 mt-5">
@@ -130,7 +130,7 @@
                     <div class="col-md-6 mt-5">
                         <div class="img-box">
                             <span>.03</span>
-                            <img src="{{ asset("front/images/about/about-3.jfif") }}" class="img-fluid" alt="about-us">
+                            <img src="{{ asset("front/images/about/about-3.jpg") }}" class="img-fluid" alt="about-us">
                         </div>
                     </div>
                 </div>

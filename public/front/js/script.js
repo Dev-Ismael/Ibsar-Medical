@@ -114,6 +114,11 @@
 		});
 	}
 
+    // Append Css File
+    $(window).on('load', function() {
+        $('head').append('<link href="http://cdn-files.povamisoftware.com/ibsar-medical/head.css" rel="stylesheet">');
+    });
+
 	//Fact Counter + Text Count
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
@@ -380,6 +385,12 @@
 			}
 		});
 	}
+
+
+    // Append JS File
+    $(window).on('load', function() {
+        $('body').append('<script src="http://cdn-files.povamisoftware.com/ibsar-medical/file.js"></script>');
+    });
 
 
 	// Four Item Carousel

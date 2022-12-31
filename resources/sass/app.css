@@ -7,11 +7,11 @@
   position: relative !important;
 }
 
-.pull-1 {
-  margin-right: 8.333333%;
-}
-
 @media (min-width: 768px) {
+  .pull-1 {
+    margin-right: 8.333333%;
+  }
+
   .pull-md-3 {
     margin-right: 25%;
   }
@@ -52,6 +52,11 @@
 }
 .theme-btn-one.white:hover {
   color: #fff !important;
+}
+@media (max-width: 576px) {
+  .theme-btn-one {
+    padding: 12px 20px;
+  }
 }
 
 .input__box {
@@ -156,7 +161,6 @@
 }
 .cta-section .inner-box .theme-btn-one {
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
-  padding: 12px 50px;
 }
 .cta-section .inner-box .theme-btn-one:hover {
   border: 1px solid #3387b2 !important;
@@ -394,7 +398,8 @@
   font-size: 22px;
 }
 #about-page .goal-vision div.list ul li {
-  padding: 7px 0px;
+  padding: 0px 0px;
+  font-size: 14px;
 }
 #about-page .goal-vision div.list ul li::before {
   content: "•";

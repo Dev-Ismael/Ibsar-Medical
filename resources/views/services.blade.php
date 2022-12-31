@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- page-title -->
-    <section class="page-title centred" style="background-image: url(front/images/background/page-title.jpg);">
+    <section class="page-title centred" style="background-image: url(front/images/background/testimonial-1.jpg);">
         <div class="auto-container">
             <div class="content-box">
                 <div class="inner-box">

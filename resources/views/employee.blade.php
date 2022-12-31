@@ -4,7 +4,7 @@
     <div id="about-page">
 
         <!-- page-title -->
-        <section class="page-title centred" style="background-image: url(front/images/background/page-title.jpg);">
+        <section class="page-title centred" style="background-image: url(front/images/background/testimonial-1.jpg);">
             <div class="auto-container">
                 <div class="content-box">
                     <div class="inner-box">
@@ -20,7 +20,7 @@
         <section class="about-style-four sec-pad">
             <div class="auto-container">
                 <div class="row clearfix">
-                    <div class="text-right">
+                    <div class="col-12 text-right">
                         {{-- <h1 class="font-blue pb-4">انضم لنا
                         </h1> --}}
                         <h3 class="cta-section">
