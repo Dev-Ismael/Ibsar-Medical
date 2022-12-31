@@ -133,13 +133,9 @@
             <section class="service-custom-section section-padding">
                 <div class="auto-container">
                     <div class="sec-title centred">
-                        <div class=" row align-items-center h-100">
-                            <div class="col-8 text-right">
-                                <h6>خدماتنا</h6>
-                                <p>نلتزم بالعمل بامتياز لتقديم خدماتنا للمرضى على أعلى معايير
-                                    الجودة و السلامة</p>
-                            </div>
-                        </div>
+                        <h6>خدماتنا</h6>
+                        <p>نلتزم بالعمل بامتياز لتقديم خدماتنا للمرضى على أعلى معايير
+                            الجودة و السلامة</p>
                     </div>
                     <div class="row clearfix">
                         @foreach ( $services as $service )
@@ -257,6 +253,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-12 team-block">

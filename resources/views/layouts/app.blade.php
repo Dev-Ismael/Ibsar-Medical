@@ -94,6 +94,7 @@
 
         @php
             $services   = App\Models\Service::get();
+            $settings   = App\Models\Setting::where('id',1)->first();
         @endphp
 
         <!-- main header -->
@@ -104,7 +105,7 @@
         ">
             <!-- header-lower -->
             <div class="header-lower container">
-                <div class="outer-box">
+                <div class="outer-box d-flex">
                     <div class="logo-box">
                         <figure class="logo"><a href="{{ route("home") }}"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo"></a></figure>
                     </div>
@@ -162,20 +163,16 @@
                 <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
                 <div class="contact-info">
-                    <h4>Contact Info</h4>
+                    <h4>مركز ابصار البصري</h4>
                     <ul>
-                        <li>Chicago 12, Melborne City, USA</li>
-                        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li>المملكة العربية السعودية - الرياض حي الملك فيصل ، تقاطع طريق الملك عبدالله بن عبدالعزيز و شارع الفضول 13 </li>
                     </ul>
                 </div>
                 <div class="social-links">
                     <ul class="clearfix">
-                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                        <li><a href="{{ $settings->linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="{{ $settings->twitter }}"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="{{ $settings->instagram }}"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -222,7 +219,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
                                 <div class="footer-logo">
-                                    <figure class="logo"><a href="index.html"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo" height="120"></a></figure>
+                                    <figure class="logo"><a href="{{ route("home") }}"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo" height="120"></a></figure>
                                 </div>
                                 <div class="text">
                                     <p>المملكة العربية السعودية - الرياض حي الملك
@@ -235,10 +232,9 @@
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index.html">الرئيسية</a></li>
-                                        <li><a href="index.html">الخدمات</a></li>
-                                        <li><a href="index.html">من نحن</a></li>
-                                        <li><a href="index.html">الطاقم الطبي</a></li>
+                                        <li><a href="{{ route("home") }}">الرئيسية</a></li>
+                                        <li><a href="{{ route("about") }}">من نحن</a></li>
+                                        <li><a href="{{ route("member.index") }}">الطاقم الطبي</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -247,10 +243,9 @@
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index.html">المدونة</a></li>
-                                        <li><a href="index.html">الخدمات</a></li>
-                                        <li><a href="index.html">من نحن</a></li>
-                                        <li><a href="index.html">الاختبارات</a></li>
+                                        <li><a href="{{ route("blog") }}">المدونة</a></li>
+                                        <li><a href="{{ route("service.index") }}">الخدمات</a></li>
+                                        <li><a href="{{ route("about") }}">من نحن</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -259,9 +254,9 @@
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index.html">المسؤولية الاجتماعية</a></li>
-                                        <li><a href="index.html">انضم لنا</a></li>
-                                        <li><a href="index.html">حجز موعد</a></li>
+                                        <li><a href="{{ route("about") }}">المسؤولية الاجتماعية</a></li>
+                                        <li><a href="{{ route("employee") }}">انضم لنا</a></li>
+                                        <li><a href="/#book-appointment">حجز موعد</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -303,9 +298,9 @@
                 <div class="auto-container">
                     <div class="copyright">
                         <ul class="social-style-one mb-3">
-                            <li><a href="index-3.html"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="index-3.html"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="index-3.html"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="{{ $settings->linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="{{ $settings->twitter }}"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="{{ $settings->instagram }}"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                         <p> © جميع الحقوق محفوظة. الابصار الطبية </p>
                     </div>

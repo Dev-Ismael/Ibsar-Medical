@@ -103,7 +103,7 @@ class DatabaseSeeder extends Seeder
             'sms'             => 'sms',
             'whatsapp'        => 'whatsapp',
             'linkedin'        => 'linkedin',
-            'facebook'        => 'facebook',
+            'instagram'       => 'instagram',
             'twitter'         => 'twitter',
             'youtube'         => 'youtube',
         ]);

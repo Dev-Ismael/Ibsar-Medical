@@ -1328,7 +1328,7 @@ img {
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
-  background: #061a3a;
+  background: #3387b2;
   padding: 0px 0px;
   z-index: 5;
   opacity: 0;
@@ -2506,6 +2506,7 @@ div#mCSB_1_container{
 .team-block-one .inner-box .lower-content .designation{
   position: relative;
   display: block;
+  height: 90px;
 }
 
 
@@ -3192,9 +3193,11 @@ div#mCSB_1_container{
 }
 
 .footer-top p{
-  line-height: 30px;
+  line-height: 20px;
 }
-
+.footer-top h4{
+    font-size: 18px;
+}
 .footer-top .widget-title{
   position: relative;
   display: block;

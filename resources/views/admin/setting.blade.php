@@ -263,11 +263,11 @@
                                             </div>
 
 
-                                            <!----------------- facebook -------------------->
+                                            <!----------------- instagram -------------------->
                                             <div class="mb-4 input-content">
-                                                <label for="facebook" class="capitalize"> <i class="fa-brands fa-facebook-square"></i> Facebook </label>
-                                                <input type="text" name="facebook" id="facebook" class="form-control @error('facebook') is-invalid @enderror" value="{{ $setting->facebook }}" aria-describedby="emailHelp" placeholder="Type Facebook Account..." autocomplete="nope" />
-                                                @error('facebook')
+                                                <label for="instagram" class="capitalize"> <i class="fa-brands fa-instagram-square"></i> instagram </label>
+                                                <input type="text" name="instagram" id="instagram" class="form-control @error('instagram') is-invalid @enderror" value="{{ $setting->instagram }}" aria-describedby="emailHelp" placeholder="Type Instagram Account..." autocomplete="nope" />
+                                                @error('instagram')
                                                     <small class="form-text text-danger">{{ $message }}</small>
                                                 @enderror
                                             </div>

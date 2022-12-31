@@ -8,10 +8,10 @@
     position: relative !important;
 }
 
-.pull-1{
-    margin-right: 8.333333%;
-}
 @media (min-width: 768px) {
+    .pull-1{
+        margin-right: 8.333333%;
+    }
     .pull-md-3{
         margin-right: 25%;
     }
@@ -55,8 +55,10 @@
             color: #fff !important;
         }
     }
+    @media (max-width: 576px) {
+        padding: 12px 20px;
+    }
 }
-
 // custom Inputs Stlye
 .input__box {
 

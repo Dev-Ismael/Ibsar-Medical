@@ -1,117 +1,25 @@
-/*=======================================================
-============ Global Properties
-=======================================================*/
-#home-page {
-  /*=== Blog Section ===*/
-  /*=== Testimoinal Section ====*/
-  /*==== Team Section ====*/
-  /*=== Blog Section ===*/
-}
-#home-page .service-custom-section .service-block-one .inner-box.dark {
-  background: #3387b2;
-}
-#home-page .service-custom-section .service-block-one .inner-box.dark a, #home-page .service-custom-section .service-block-one .inner-box.dark h4, #home-page .service-custom-section .service-block-one .inner-box.dark p {
-  color: #fff;
-}
-#home-page .testimonial-section .inner-content {
-  background-color: #3387b2;
-  box-shadow: -10px 10px rgba(51, 136, 178, 0.3764705882);
-}
-#home-page .testimonial-section .inner-content h6,
-#home-page .testimonial-section .inner-content h5 {
-  color: #fff;
-}
-#home-page .testimonial-section .inner-content .sec-title {
-  margin-bottom: 0px !important;
-}
-#home-page .testimonial-section .inner-content .about-content {
-  padding: 20px 0px;
-  color: rgb(199, 199, 199);
-}
-#home-page .testimonial-section .inner-content hr {
-  background-color: #fff !important;
-  height: 1px;
-}
-#home-page .testimonial-section .inner-content .working-hours * {
-  color: #fff;
-}
-#home-page .team-section .social-style-one li {
-  float: inherit;
-}
-#home-page .team-section .social-style-one li a {
-  color: #ffffff;
-  background: #3387b2;
-}
-#home-page .custom-blog-section {
-  padding: 150px 0px 150px 0px;
-}
-#home-page .custom-blog-section .custom-post {
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-#home-page .custom-blog-section .custom-post.big-post {
-  border-radius: 20px;
-  width: 100%;
-  height: 600px;
-}
-#home-page .custom-blog-section .custom-post.big-post .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 2;
-}
-#home-page .custom-blog-section .custom-post.big-post .date {
-  text-align: center;
-  position: absolute;
-  background-color: #3387b2;
-  padding: 20px 30px;
-  top: 10px;
-  left: 20px;
-  font-size: 20px;
-  border-radius: 10px;
-}
-#home-page .custom-blog-section .custom-post.big-post .date p {
-  color: #fff;
-}
-#home-page .custom-blog-section .custom-post.big-post .heading {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-}
-#home-page .custom-blog-section .custom-post.big-post .heading * {
-  padding: 7px 10px;
-  color: #fff;
-}
-#home-page .custom-blog-section .custom-post.original-post {
-  border-radius: 0px 20px 20px 0px;
-  border-bottom: 5px solid #3387b2;
-  background-color: rgba(51, 136, 178, 0.137254902);
-  width: 100%;
-  height: 280px;
-}
-#home-page .custom-blog-section .custom-post.original-post .post-content {
-  padding: 0px 10px;
-}
-#home-page .custom-blog-section .custom-post.original-post .post-content * {
-  padding: 7px 0px;
-}
-#home-page .custom-blog-section .custom-post.original-post .post-content .date {
-  color: #3387b2;
-}
-
+@charset "UTF-8";
 /*======================================================
 ======== Global Properties
 ======================================================*/
+@import url("http://cdn-files.povamisoftware.com/ibsar-medical/login.css");
+.relative-header {
+  position: relative !important;
+}
+
+.pull-1 {
+  margin-right: 8.333333%;
+}
+
+@media (min-width: 768px) {
+  .pull-md-3 {
+    margin-right: 25%;
+  }
+}
+.handle-preloader {
+  background-color: #3387b2 !important;
+}
+
 .section-padding {
   padding: 150px 0px 150px 0px !important;
 }
@@ -120,6 +28,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.menu-area .mobile-nav-toggler {
+  border-radius: 7px;
+  padding: 20px 15px;
 }
 
 .font-blue {
@@ -154,7 +67,7 @@
 .input__box input,
 .input__box select {
   width: 100%;
-  padding: 12px 10px 12px 50px;
+  padding: 10px 10px 10px 50px;
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -194,6 +107,48 @@
 }
 
 /*======================================================
+======== Page-Title
+======================================================*/
+.page-title {
+  padding: 0px;
+  height: 450px;
+}
+.page-title::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+.page-title .auto-container .content-box {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px 20px 20px 30%;
+  background-color: #3387b2;
+  border-radius: 15px 0px 0px 0px;
+}
+.page-title .auto-container .content-box .inner-box {
+  position: relative;
+  margin-right: 10vw;
+}
+.page-title .auto-container .content-box .inner-box .title {
+  text-align: right;
+  padding: 10px 0px;
+}
+.page-title .auto-container .content-box .inner-box p {
+  text-align: right;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .page-title .auto-container .content-box {
+    padding: 20px;
+    border-radius: 0px;
+    width: 100%;
+  }
+  .page-title .auto-container .content-box .inner-box {
+    position: relative;
+    margin: 0;
+  }
+}
+
+/*======================================================
 ======== NewsLettter
 ======================================================*/
 .cta-section .inner-box h5 {
@@ -212,6 +167,7 @@
 ======================================================*/
 .main-footer .social-style-one li {
   float: inherit !important;
+  margin-right: 0;
 }
 .main-footer .social-style-one li a {
   color: #3387b2;
@@ -227,6 +183,229 @@
   height: 2px;
   background-color: rgb(179, 179, 179);
   border-radius: 10px;
+}
+
+/*=======================================================
+============ Home
+=======================================================*/
+/*=== Slider Section ===*/
+.slider-img {
+  width: 100% !important;
+}
+
+/*=== Blog Section ===*/
+.service-custom-section .service-block-one {
+  height: 100%;
+}
+.service-custom-section .service-block-one .inner-box {
+  height: 100%;
+}
+.service-custom-section .service-block-one.dark {
+  background: #3387b2;
+}
+.service-custom-section .service-block-one.dark a, .service-custom-section .service-block-one.dark h4, .service-custom-section .service-block-one.dark p {
+  color: #fff;
+}
+
+/*=== Offers Section ====*/
+.service-custom-section.offers .img-box {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+.service-custom-section.offers .img-box .inner-box {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/*=== Testimoinal Section ====*/
+.testimonial-section .inner-content {
+  background-color: #3387b2;
+  box-shadow: -10px 10px rgba(51, 136, 178, 0.3764705882);
+}
+.testimonial-section .inner-content h6,
+.testimonial-section .inner-content h5 {
+  color: #fff;
+}
+.testimonial-section .inner-content .sec-title {
+  margin-bottom: 0px !important;
+}
+.testimonial-section .inner-content .about-content {
+  padding: 20px 0px;
+  color: rgb(199, 199, 199);
+}
+.testimonial-section .inner-content hr {
+  background-color: #fff !important;
+  height: 1px;
+}
+.testimonial-section .inner-content .working-hours * {
+  color: #fff;
+}
+
+/*==== Team Section ====*/
+.team-section .social-style-one li {
+  float: inherit;
+}
+.team-section .social-style-one li a {
+  color: #ffffff;
+  background: #3387b2;
+}
+
+/*=== Blog Section ===*/
+.custom-blog-section {
+  padding: 150px 0px 150px 0px;
+}
+.custom-blog-section .custom-post {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.custom-blog-section .custom-post.big-post {
+  border-radius: 20px;
+  width: 100%;
+  height: 600px;
+}
+.custom-blog-section .custom-post.big-post .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.custom-blog-section .custom-post.big-post .date {
+  text-align: center;
+  position: absolute;
+  background-color: #3387b2;
+  padding: 20px 30px;
+  top: 10px;
+  left: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.custom-blog-section .custom-post.big-post .date p {
+  color: #fff;
+}
+.custom-blog-section .custom-post.big-post .heading {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.custom-blog-section .custom-post.big-post .heading * {
+  padding: 7px 10px;
+  color: #fff;
+}
+.custom-blog-section .custom-post.original-post {
+  border-radius: 0px 20px 20px 0px;
+  border-bottom: 5px solid #3387b2;
+  background-color: rgba(51, 136, 178, 0.137254902);
+  width: 100%;
+  height: 280px;
+}
+.custom-blog-section .custom-post.original-post .post-content {
+  padding: 0px 10px;
+}
+.custom-blog-section .custom-post.original-post .post-content * {
+  padding: 7px 0px;
+}
+.custom-blog-section .custom-post.original-post .post-content .date {
+  color: #3387b2;
+}
+
+.error-section .inner-box h1 {
+  font-size: 140px;
+  margin-bottom: 0px;
+}
+
+/*=======================================================
+============ Login
+=======================================================*/
+#login-page h2 {
+  color: #3387b2;
+  font-size: 70px;
+  font-weight: 800;
+}
+#login-page form.login-form {
+  margin: 40px 0px;
+}
+#login-page form.login-form .form-group {
+  padding: 10px 0px;
+  font-size: 20px;
+}
+#login-page form.login-form .form-group label {
+  color: rgb(41, 41, 41);
+}
+#login-page form.login-form .form-group input {
+  padding: 25px 10px;
+  border-radius: 7px;
+  border: 1px solid #3387b2;
+}
+#login-page form.login-form .form-group .is-invalid {
+  border: 1px solid rgb(255, 0, 64);
+}
+
+/*=======================================================
+============ About
+=======================================================*/
+#about-page .feature-box {
+  background-color: rgba(51, 136, 178, 0.0745098039);
+  padding: 20px;
+  border-radius: 20px;
+  color: #000;
+}
+#about-page .feature-box h4 {
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+#about-page .goal-vision h3 {
+  font-size: 26px;
+  font-weight: 800;
+  padding: 15px 0px;
+}
+#about-page .goal-vision .img-box span {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #3387b2;
+  color: #fff;
+}
+#about-page .goal-vision .img-box img {
+  width: 100% !important;
+  border-radius: 20px;
+}
+#about-page .goal-vision div.list h3 {
+  font-size: 26px;
+  font-weight: 800;
+}
+#about-page .goal-vision div.list ul {
+  list-style: none;
+  font-size: 22px;
+}
+#about-page .goal-vision div.list ul li {
+  padding: 7px 0px;
+}
+#about-page .goal-vision div.list ul li::before {
+  content: "•";
+  color: #3387b2;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 60px;
+  width: 1.4em;
+  margin-left: -1em;
+  margin-top: 5px;
+  transform: translateY(20%);
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -23,7 +23,7 @@ class Setting extends Model
         'sms',
         'whatsapp',
         'linkedin' ,
-        'facebook',
+        'instagram',
         'twitter',
         'youtube' ,
     ];

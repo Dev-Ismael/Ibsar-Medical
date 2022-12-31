@@ -33,7 +33,7 @@ class UpdateSettingRequest extends FormRequest
             'sms'               => ['nullable' , 'string' , 'max:255' ],
             'whatsapp'          => ['nullable' , 'string' , 'max:255' ],
             'linkedin'          => ['nullable' , 'string' , 'max:255' ],
-            'facebook'          => ['nullable' , 'string' , 'max:255' ],
+            'instagram'         => ['nullable' , 'string' , 'max:255' ],
             'twitter'           => ['nullable' , 'string' , 'max:255' ],
             'youtube'           => ['nullable' , 'string' , 'max:255' ],
         ];
