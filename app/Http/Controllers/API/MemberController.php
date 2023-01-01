@@ -3,20 +3,20 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Offers\StoreOfferRequest;
-use App\Http\Requests\Offers\UpdateOfferRequest;
-use App\Http\Resources\OfferResource;
-use App\Models\Offer;
+use App\Http\Requests\Members\StoreMemberRequest;
+use App\Http\Requests\Members\UpdateMemberRequest;
+use App\Http\Resources\MemberResource;
+use App\Models\Member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
-class OfferController extends Controller
+class MemberController extends Controller
 {
     public function index()
     {
-        $offers = Offer::all();
-        return OfferResource::collection($offers);
+        $members = Member::all();
+        return MemberResource::collection($members);
     }
 
     /**
@@ -25,7 +25,7 @@ class OfferController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreOfferRequest $request)
+    public function store(StoreMemberRequest $request)
     {
 
         // save all request in one variable
@@ -36,7 +36,7 @@ class OfferController extends Controller
         $img_name = rand(1000000,10000000) . "." . $img_extention;   // name => 32632.png
 
         // Path
-        $path = "images/offers" ;
+        $path = "images/members" ;
 
         // Upload
         $request -> img -> move( $path , $img_name );
@@ -49,9 +49,9 @@ class OfferController extends Controller
         $requestData += [ 'slug' => Str::slug( $request->title , '-') ];
 
         // Store
-        $offer = Offer::create( $requestData );
+        $member = Member::create( $requestData );
 
-        return response()->json($offer, 201);
+        return response()->json($member, 201);
     }
 
     /**
@@ -62,8 +62,8 @@ class OfferController extends Controller
      */
     public function show($id)
     {
-        $offer = Offer::find($id);
-        return OfferResource::collection($offer);
+        $member = Member::find($id);
+        return MemberResource::collection($member);
     }
 
     /**
@@ -73,17 +73,17 @@ class OfferController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateOfferRequest $request, $id)
+    public function update(UpdateMemberRequest $request, $id)
     {
         // find id in Db With Error 404
-        $offer = Offer::findOrFail($id);
+        $member = Member::findOrFail($id);
 
         // save all request in one variable
         $requestData = $request->all();
         // return $requestData;
 
         // Check If There Images Uploaded
-        $path = "images/offers" ;
+        $path = "images/members" ;
 
 
         if( $request -> hasFile("img") ){
@@ -92,7 +92,7 @@ class OfferController extends Controller
             $img_name = rand(1000000,10000000) . "." . $img_extention;   // name => 3628.png
             $request -> img -> move( $path , $img_name );
         }else{
-            $img_name = $offer->img;
+            $img_name = $member->img;
         }
 
         // Add images names in request array
@@ -101,9 +101,9 @@ class OfferController extends Controller
         // add slug in $requestData Array
         $requestData += [ 'slug' => Str::slug( $request->title , '-') ];
 
-        $update = $offer-> update( $requestData );
+        $update = $member-> update( $requestData );
 
-        return response()->json($offer, 200);
+        return response()->json($member, 200);
     }
 
     /**
@@ -114,7 +114,7 @@ class OfferController extends Controller
      */
     public function destroy($id)
     {
-        Offer::find($id)->delete();
+        Member::find($id)->delete();
         return response()->json(null, 204);
     }
 }
