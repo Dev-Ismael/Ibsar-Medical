@@ -84,6 +84,13 @@
                 background: $blue;
             }
         }
+        .image-box{
+            height: 420px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     /*=== Blog Section ===*/
@@ -159,3 +166,4 @@
             }
         }
     }
+

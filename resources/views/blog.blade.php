@@ -48,7 +48,14 @@
                                                 </figure>
                                                 <div class="lower-content">
                                                     <div class="shape" style="background-image: url(front/images/shape/shape-13.png);"></div>
-                                                    <div class="post-date"><h3>14<span>MAR</span></h3></div>
+                                                    <div class="post-date">
+                                                        <h3>
+                                                            {{ $article->arabic_date["day"] }}
+                                                            <span>
+                                                                {{ $article->arabic_date["month"] }}
+                                                            </span>
+                                                        </h3>
+                                                    </div>
                                                     <h4><a href="blog-details.html">{{ $article->title }}</a></h4>
                                                     <div class="post-info">
                                                         <p>بواسطه <a href="{{ route('article', $article->slug) }}" > {{ $article->author }} </p>

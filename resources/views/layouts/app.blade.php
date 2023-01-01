@@ -194,14 +194,14 @@
                     <form action="{{ route('subscriber.store') }}" method="POST">
                         @csrf
                         <div class="row">
-                            <div class="col-md-8 pull-1 mt-2">
+                            <div class="col-md-7 pull-1 mt-2">
                                 <div class="input__box">
                                     <i class="input__icon fa-solid fa-envelope"></i>
                                     <input type="email" class="w-100" placeholder="البريد الاليكتروني : *" name="email" autocomplete="nope" minlength="8" required/>
                                 </div>
                             </div>
-                            <div class="col-md-2 text-center mt-2">
-                                <button type="submit" class="theme-btn-one">اشتراك</button>
+                            <div class="col-md-3 text-center mt-2">
+                                <button type="submit" class="w-100 theme-btn-one blue-opcity">اشتراك</button>
                             </div>
 
                         </div>

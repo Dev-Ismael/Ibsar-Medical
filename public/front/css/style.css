@@ -575,9 +575,6 @@ img {
   margin-bottom: 13px;
 }
 
-.sec-title.centred h6{
-  padding-right: 50px;
-}
 
 .sec-title h6:before{
     position: absolute;
@@ -592,17 +589,6 @@ img {
     background-size: cover;
 }
 
-
-.sec-title.centred h6:after{
-  position: absolute;
-  content: '';
-  background: url(../images/icons/decor-2.png);
-  width: 37px;
-  height: 7px;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .sec-title h2{
   display: block;
@@ -905,15 +891,16 @@ img {
 }
 
 .main-menu .navigation > li > ul > li{
-  position:relative;
-  width:100%;
-  padding: 0px 30px;
-  -webkit-transition: all 0.2s cubic-bezier(0.4,0.28,0.31,1.28) 0s;
-  transition: all 0.2s cubic-bezier(0.4,0.28,0.31,1.28) 0s;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+    -webkit-transition: all 0.2s cubic-bezier(0.4,0.28,0.31,1.28) 0s;
+    transition: all 0.2s cubic-bezier(0.4,0.28,0.31,1.28) 0s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    border-bottom: 1px solid #78787896;
 }
 
 .main-menu .navigation > li:hover > ul > li{

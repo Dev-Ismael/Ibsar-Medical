@@ -10,7 +10,7 @@
                         <div class="content-one">
                             <figure class="image"><img src="{{ asset('images/articles/'.$article->img) }}" alt="article-img" class="img-fluid"></figure>
                             <div class="text">
-                                <h3>{{ $article->title }}</h3>
+                                <h3>{{ $article->title }} </h3>
                                 <p>
                                     {!! $article->content !!}
                                 </p>

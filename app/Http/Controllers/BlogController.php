@@ -8,10 +8,12 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Illuminate\Http\Request;
 use App\Traits\SEOTrait;
-
+use App\Traits\DateTrait;
+use IntlDateFormatter;
 class BlogController extends Controller
 {
     use SEOTrait;
+    use DateTrait;
     /**
      * Show the application dashboard.
      *
@@ -29,6 +31,12 @@ class BlogController extends Controller
         //     'Digital switching over, How tax planning matters,Payroll management,Qbooks,How COVID-19 affected the IRS,CPA from A to Z part two,CPA from A to Z'
         // );
 
+
+        // Add Arabic Date
+        foreach ($articles as $article) {
+            $article->arabic_date = $this->arabicDate($article->created_at);
+        }
+
         return view('blog',compact('categories','articles'));
     }
 
@@ -40,6 +48,7 @@ class BlogController extends Controller
         if( !$article ){
             return redirect('/');
         }
+
 
         // SEO Trait
         $this->dynamicPagesSeo($article);
@@ -55,6 +64,12 @@ class BlogController extends Controller
         ]);
 
         $articles = Article::where('title', 'like', "%{$request->search}%")->paginate( 20 );
+
+        // Add Arabic Date
+        foreach ($articles as $article) {
+            $article->arabic_date = $this->arabicDate($article->created_at);
+        }
+
         $categories      = Category::all();
         return view('blog',compact('categories','articles'));
     }

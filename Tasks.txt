@@ -18,7 +18,6 @@ Advanced Tasks:
 Tasks:
 ============
 - add offer form
-- blog date arabic
 
 
 

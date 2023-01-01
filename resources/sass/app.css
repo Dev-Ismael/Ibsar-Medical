@@ -159,12 +159,6 @@
 .cta-section .inner-box h5 {
   font-size: 26px;
 }
-.cta-section .inner-box .theme-btn-one {
-  border: 1px solid rgba(255, 255, 255, 0.5) !important;
-}
-.cta-section .inner-box .theme-btn-one:hover {
-  border: 1px solid #3387b2 !important;
-}
 
 /*======================================================
 ======== Footer
@@ -256,6 +250,13 @@
 .team-section .social-style-one li a {
   color: #ffffff;
   background: #3387b2;
+}
+.team-section .image-box {
+  height: 420px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*=== Blog Section ===*/

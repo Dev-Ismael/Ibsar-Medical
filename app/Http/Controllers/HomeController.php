@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Member;
 use App\Models\Service;
-
+use App\Traits\DateTrait;
 class HomeController extends Controller
 {
+    use DateTrait;
     /**
      * Show the application dashboard.
      *
@@ -15,10 +16,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $members      = Member::where('slider_show','1')->get();
+        $members      = Member::get();
         $articles     = Article::orderBy('id','desc')->limit(3)->get();
-        $services     = Service::where('visibility', '1')->limit(3)->get();
+        $services     = Service::get();
 
+
+        // Add Arabic Date
+        foreach ($articles as $article) {
+            $article->arabic_date = $this->arabicDate($article->created_at);
+        }
         // // SEO Trait
         // $this->staticPagesSeo(
         //     'Home',
