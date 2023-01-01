@@ -18,8 +18,9 @@ class MemberResource extends JsonResource
         return [
             'id'         => $this->id,
             'name'      => $this->name ,
-            'job_title ' => $this->job_title ,
+            'job_title' => $this->job_title ,
             'img'        => '/images/members/'.$this->img,
+            'twitter' => $this->twitter ,
             'created_at' => $this->created_at,
         ];
     }
