@@ -16,7 +16,9 @@
     <link rel="icon" href='{{ asset('front/images/favicon.png') }}' type="image/x-icon">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- Google Fonts -->
@@ -36,14 +38,15 @@
     <link href='{{ asset('front/css/style.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/responsive.css') }}' rel="stylesheet">
     <link href='{{ asset('front/css/customize.css') }}' rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 
 
 
 
 
     <!-- Scripts -->
-    @vite([ 'resources/sass/app.scss', 'resources/js/app.js' ])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 </head>
 
@@ -52,7 +55,7 @@
 
 
         <!-- preloader -->
-         <div class="loader-wrap">
+        <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">Preloader Close</div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -74,7 +77,8 @@
                     <form method="post" action="index.html">
                         <div class="form-group">
                             <fieldset>
-                                <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                                <input type="search" class="form-control" name="search-input" value=""
+                                    placeholder="Search Here" required>
                                 <input type="submit" value="Search Now!" class="theme-btn style-four">
                             </fieldset>
                         </div>
@@ -93,21 +97,21 @@
         <!-- search-popup end -->
 
         @php
-            $services   = App\Models\Service::get();
-            $settings   = App\Models\Setting::where('id',1)->first();
+            $services = App\Models\Service::get();
+            $settings = App\Models\Setting::where('id', 1)->first();
         @endphp
 
         <!-- main header -->
-        <header class="main-header style-four
-            @if ( Request::route()->getName() != 'home')
-                relative-header
-            @endif
+        <header
+            class="main-header style-four
+            @if (Request::route()->getName() != 'home') relative-header @endif
         ">
             <!-- header-lower -->
             <div class="header-lower container">
                 <div class="outer-box d-flex">
                     <div class="logo-box">
-                        <figure class="logo"><a href="{{ route("home") }}"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo"></a></figure>
+                        <figure class="logo"><a href="{{ route('home') }}"><img
+                                    src="{{ asset('front/images/logo.png') }}" alt="fusion-logo"></a></figure>
                     </div>
                     <div class="menu-area clearfix">
                         <!--Mobile Navigation Toggler-->
@@ -119,18 +123,20 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="{{ route("home") }}">الرئيسية</a></li>
-                                    <li class="dropdown"><a href="{{ route("service.index") }}" >الخدمات</a>
+                                    <li><a href="{{ route('home') }}">الرئيسية</a></li>
+                                    <li class="dropdown"><a href="{{ route('service.index') }}">الخدمات</a>
                                         <ul>
-                                            @foreach ( $services as $service )
-                                                <li><a href="{{ route("service.show", $service->slug ) }}">{{ $service->title }}</a></li>
+                                            @foreach ($services as $service)
+                                                <li><a
+                                                        href="{{ route('service.show', $service->slug) }}">{{ $service->title }}</a>
+                                                </li>
                                             @endforeach
                                         </ul>
                                     </li>
-                                    <li><a href="{{ route("about") }}">من نحن</a></li>
-                                    <li><a href="{{ route("member.index") }}">الطاقم الطبي</a></li>
-                                    <li><a href="{{ route("offer.index") }}">العروض</a></li>
-                                    <li><a href="{{ route("responsibility.index") }}">المسؤوليات المجتمعية</a></li>
+                                    <li><a href="{{ route('about') }}">من نحن</a></li>
+                                    <li><a href="{{ route('member.index') }}">الطاقم الطبي</a></li>
+                                    <li><a href="{{ route('offer.index') }}">العروض</a></li>
+                                    <li><a href="{{ route('responsibility.index') }}">المسؤوليات المجتمعية</a></li>
                                     <li><a href="/#book-appointment">حجز موعد</a></li>
                                 </ul>
                             </div>
@@ -160,12 +166,16 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt=""
+                            title=""></a></div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
                 <div class="contact-info">
                     <h4>مركز ابصار البصري</h4>
                     <ul>
-                        <li>المملكة العربية السعودية - الرياض حي الملك فيصل ، تقاطع طريق الملك عبدالله بن عبدالعزيز و شارع الفضول 13 </li>
+                        <li>المملكة العربية السعودية - الرياض حي الملك فيصل ، تقاطع طريق الملك عبدالله بن عبدالعزيز و
+                            شارع الفضول 13 </li>
                     </ul>
                 </div>
                 <div class="social-links">
@@ -197,7 +207,8 @@
                             <div class="col-md-7 pull-1 mt-2">
                                 <div class="input__box">
                                     <i class="input__icon fa-solid fa-envelope"></i>
-                                    <input type="email" class="w-100" placeholder="البريد الاليكتروني : *" name="email" autocomplete="nope" minlength="8" required/>
+                                    <input type="email" class="w-100" placeholder="البريد الاليكتروني : *"
+                                        name="email" autocomplete="nope" minlength="8" required />
                                 </div>
                             </div>
                             <div class="col-md-3 text-center mt-2">
@@ -219,7 +230,9 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
                                 <div class="footer-logo">
-                                    <figure class="logo"><a href="{{ route("home") }}"><img src="{{ asset('front/images/logo.png') }}" alt="fusion-logo" height="120"></a></figure>
+                                    <figure class="logo"><a href="{{ route('home') }}"><img
+                                                src="{{ asset('front/images/logo.png') }}" alt="fusion-logo"
+                                                height="120"></a></figure>
                                 </div>
                                 <div class="text">
                                     <p>المملكة العربية السعودية - الرياض حي الملك
@@ -232,9 +245,9 @@
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="{{ route("home") }}">الرئيسية</a></li>
-                                        <li><a href="{{ route("about") }}">من نحن</a></li>
-                                        <li><a href="{{ route("member.index") }}">الطاقم الطبي</a></li>
+                                        <li><a href="{{ route('home') }}">الرئيسية</a></li>
+                                        <li><a href="{{ route('about') }}">من نحن</a></li>
+                                        <li><a href="{{ route('member.index') }}">الطاقم الطبي</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -243,9 +256,9 @@
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="{{ route("blog") }}">المدونة</a></li>
-                                        <li><a href="{{ route("service.index") }}">الخدمات</a></li>
-                                        <li><a href="{{ route("about") }}">من نحن</a></li>
+                                        <li><a href="{{ route('blog') }}">المدونة</a></li>
+                                        <li><a href="{{ route('service.index') }}">الخدمات</a></li>
+                                        <li><a href="{{ route('about') }}">من نحن</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -254,8 +267,8 @@
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="{{ route("about") }}">المسؤولية الاجتماعية</a></li>
-                                        <li><a href="{{ route("employee") }}">انضم لنا</a></li>
+                                        <li><a href="{{ route('about') }}">المسؤولية الاجتماعية</a></li>
+                                        <li><a href="{{ route('employee') }}">انضم لنا</a></li>
                                         <li><a href="/#book-appointment">حجز موعد</a></li>
                                     </ul>
                                 </div>
@@ -269,7 +282,8 @@
                                 <div class="row align-items-center h-100">
                                     <div class="col-4">
                                         <a href="#">
-                                            <img src="{{ asset('front/images/icons/android-icon.png') }}" alt="android-icon" width="64">
+                                            <img src="{{ asset('front/images/icons/android-icon.png') }}"
+                                                alt="android-icon" width="64">
                                         </a>
                                     </div>
                                     <div class="col-8">
@@ -280,7 +294,8 @@
                                 <div class="row align-items-center h-100 mt-3">
                                     <div class="col-4">
                                         <a href="#">
-                                            <img src="{{ asset('front/images/icons/apple-icon.png') }}" alt="apple-icon" width="64">
+                                            <img src="{{ asset('front/images/icons/apple-icon.png') }}"
+                                                alt="apple-icon" width="64">
                                         </a>
                                     </div>
                                     <div class="col-8">

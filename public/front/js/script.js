@@ -606,4 +606,13 @@
         });
     });
 
+
+    /* ==========================================================================
+   toggleOfferForm
+   ========================================================================== */
+    $(".offer-form-btn").on("click",function () {
+        var offer_form = $("#offer-form");
+        offer_form.toggleClass("d-none");
+    });
+
 })(window.jQuery);

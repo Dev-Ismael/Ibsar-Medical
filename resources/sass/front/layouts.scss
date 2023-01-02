@@ -7,12 +7,84 @@
         h5 {
             font-size: 26px;
         }
-       
+
 
     }
 }
 
 
+
+
+/*======================================================
+======== Offer Form
+======================================================*/
+#offer-form{
+    position: fixed;
+    overflow: hidden;
+    width: 380px;
+    height: 610px;
+    right: 20px;
+    bottom: 10px;
+    z-index: 99999;
+    box-shadow: 0 10px 30px #3030305b;
+    border-radius: 15px;
+    .card{
+        height: 100%;
+        border: none;
+        border-radius: 10px !important;
+        .card-header{
+            background-color: $blue;
+            border: none;
+            padding: 20px;
+            *{
+                color: #fff !important;
+                font-size: 20px;
+            }
+        }
+        .card-body{
+            *{
+                font-size: 12px;
+            }
+            .messege{
+                padding: 10px;
+                margin: 10px 0px;
+                background-color: rgb(233, 233, 233);
+                color: rgb(112, 112, 112);
+                border-radius: 20px 20px 0px 20px;
+                &.blue{
+                    background-color: $blue;
+                    *{
+                        color: #fff;
+                    }
+                }
+            }
+            .offer-form{
+                h5{
+                    color: rgb(112, 112, 112);
+                }
+                margin: 10px 0px;
+                padding: 20px 10px;
+                border-radius: 10px;
+                background-color: rgba(233, 233, 233, 0.562);
+                i{
+                    color: $blue;
+                    font-size: 20px;
+                    top: 10px;
+                }
+                input{
+                    border-color: rgb(221, 221, 221);
+                    color: rgb(112, 112, 112);
+                    padding: 5px;
+                }
+                select{
+                    border-color: rgb(221, 221, 221);
+                    color: rgb(112, 112, 112);
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+}
 
 
 /*======================================================

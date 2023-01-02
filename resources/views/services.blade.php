@@ -22,7 +22,7 @@
         <div class="auto-container">
             <div class="row clearfix">
                 @foreach ($services as $service)
-                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block mt-5">
                         <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
                             data-wow-duration="1500ms">
                             <div class="inner-box">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Offer;
 use App\Traits\SEOTrait;
+use App\Models\Member;
 
 class OfferController extends Controller
 {
@@ -26,6 +27,10 @@ class OfferController extends Controller
     public function show($slug)
     {
         $offer        = Offer::where('slug',$slug)->first();
+
+        $members      = Member::get();
+
+
         // if article Not Found
         if( !$offer ){
             return redirect('/');
@@ -34,6 +39,6 @@ class OfferController extends Controller
         // SEO Trait
         $this->dynamicPagesSeo($offer);
 
-        return view('offer',compact('offer'));
+        return view('offer',compact('offer','members'));
     }
 }
