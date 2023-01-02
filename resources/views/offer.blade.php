@@ -89,7 +89,7 @@
                             <div class="input__box mb-2">
                                 <select name="member_id" id="member" required>
                                     <option value="" disabled selected hidden>الحجز مع : *</option>
-                                    @foreach ($members as $member)
+                                    @foreach ($all_members as $member)
                                         <option value="{{ $member->id }}"
                                             {{ old('member') == $member->id ? 'selected' : '' }}>
                                             {{ $member->name }}

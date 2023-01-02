@@ -16,9 +16,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $members      = Member::get();
+        $members      = Member::where('slider_show', 1)->get();
         $articles     = Article::orderBy('id','desc')->limit(3)->get();
-        $services     = Service::get();
+        $services     = Service::where('visibility', 1)->limit(3)->get();
 
 
         // Add Arabic Date

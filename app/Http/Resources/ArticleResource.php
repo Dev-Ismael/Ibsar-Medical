@@ -3,9 +3,11 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Traits\DateTrait;
 
 class ArticleResource extends JsonResource
 {
+    use DateTrait;
     /**
      * Transform the resource into an array.
      *
@@ -17,13 +19,13 @@ class ArticleResource extends JsonResource
         // return parent::toArray($request);
         return [
             'id'         => $this->id,
-            'title'      => $this->title  ,
+            'title'      => $this->title,
             'summary'    => $this->summary ,
             'content'    => $this->content ,
             'pinned'     => $this->pinned ,
             'author'     => $this->author ,
             'img'        => '/images/articles/'.$this->img,
-            'created_at' => $this->created_at,
+            'created_at' => $this->arabicDate($this->created_at),
         ];
     }
 }

@@ -108,8 +108,13 @@
     hr {
         width: 70%;
         margin: 0px auto;
-        height: 2px;
-        background-color: rgb(179, 179, 179);
+        height: 1px;
+        background-color: rgba(216, 216, 216, 0.445);
         border-radius: 10px;
+        display: block;
+        @media (min-width: 768px) {
+            display: none;
+        }
+
     }
 }

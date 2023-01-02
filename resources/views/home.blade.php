@@ -94,7 +94,7 @@
                                 <div class="input__box">
                                     <select name="member_id" id="member" required>
                                         <option value="" disabled selected hidden>الحجز مع : *</option>
-                                        @foreach ($members as $member)
+                                        @foreach ($all_members as $member)
                                             <option value="{{ $member->id }}"
                                                 {{ old('member') == $member->id ? 'selected' : '' }}>
                                                 {{ $member->name }}
@@ -148,18 +148,17 @@
                         <p>نلتزم بالعمل بامتياز لتقديم خدماتنا للمرضى على أعلى معايير
                             الجودة و السلامة</p>
                     </div>
-                    {{-- <div class="row clearfix">
+                    <div class="row clearfix">
                         @foreach ($services as $service)
-                            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="col-lg-4 col-md-6 col-sm-12 service-block mt-5">
                                 <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
                                     data-wow-duration="1500ms">
                                     <div class="inner-box">
                                         <div class="icon-box">
-                                            <img src="{{ asset('images/services/' . $service->icon) }}" width="64"
+                                            <img src="{{ asset('images/services/' . $service->icon) }}"  height="320" class="rounded"
                                                 alt="service-icon">
                                         </div>
-                                        <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }}
-                                            </a></h4>
+                                        <h4><a href="{{ route('service.show', $service->slug) }}"> {{ $service->title }} </a></h4>
                                         <p> {{ $service->summary }} </p>
                                         <div class="btn-box mt-5"><a href="{{ route('service.show', $service->slug) }}"
                                                 class="theme-btn-one">المزيد</a></div>
@@ -167,7 +166,7 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div> --}}
+                    </div>
 
 
 

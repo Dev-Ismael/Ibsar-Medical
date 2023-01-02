@@ -96,10 +96,6 @@
         </div>
         <!-- search-popup end -->
 
-        @php
-            $services = App\Models\Service::get();
-            $settings = App\Models\Setting::where('id', 1)->first();
-        @endphp
 
         <!-- main header -->
         <header
@@ -126,7 +122,7 @@
                                     <li><a href="{{ route('home') }}">الرئيسية</a></li>
                                     <li class="dropdown"><a href="{{ route('service.index') }}">الخدمات</a>
                                         <ul>
-                                            @foreach ($services as $service)
+                                            @foreach ($nav_services as $service)
                                                 <li><a
                                                         href="{{ route('service.show', $service->slug) }}">{{ $service->title }}</a>
                                                 </li>
@@ -241,6 +237,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
                         <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
@@ -252,6 +249,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
                         <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
@@ -263,6 +261,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget ">
                                 <div class="widget-content">
@@ -274,6 +273,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
                         <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget subscribe-widget">
                                 <div class="widget-title">
@@ -305,10 +305,10 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
                     </div>
                 </div>
             </div>
-            <hr>
             <div class="footer-bottom centred">
                 <div class="auto-container">
                     <div class="copyright">
