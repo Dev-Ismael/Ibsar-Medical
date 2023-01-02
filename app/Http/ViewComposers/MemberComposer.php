@@ -9,7 +9,7 @@ class MemberComposer
 {
     public function compose(View $view)
     {
-        $all_members = Member::all('name');
+        $all_members = Member::all('id','name');
         $view->with('all_members', $all_members);
     }
 }

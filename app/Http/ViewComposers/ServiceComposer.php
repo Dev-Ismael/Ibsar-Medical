@@ -9,7 +9,7 @@ class ServiceComposer
 {
     public function compose(View $view)
     {
-        $nav_services = Service::get('slug','title');
+        $nav_services = Service::all('slug','title');
         $view->with('nav_services', $nav_services);
     }
 }

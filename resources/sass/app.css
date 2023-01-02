@@ -161,6 +161,75 @@
 }
 
 /*======================================================
+======== Offer Form
+======================================================*/
+#offer-form {
+  position: fixed;
+  overflow: hidden;
+  width: 380px;
+  height: 610px;
+  right: 20px;
+  bottom: 10px;
+  z-index: 99999;
+  box-shadow: 0 10px 30px rgba(48, 48, 48, 0.3568627451);
+  border-radius: 15px;
+}
+#offer-form .card {
+  height: 100%;
+  border: none;
+  border-radius: 10px !important;
+}
+#offer-form .card .card-header {
+  background-color: #3387b2;
+  border: none;
+  padding: 20px;
+}
+#offer-form .card .card-header * {
+  color: #fff !important;
+  font-size: 20px;
+}
+#offer-form .card .card-body * {
+  font-size: 12px;
+}
+#offer-form .card .card-body .messege {
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: rgb(233, 233, 233);
+  color: rgb(112, 112, 112);
+  border-radius: 20px 20px 0px 20px;
+}
+#offer-form .card .card-body .messege.blue {
+  background-color: #3387b2;
+}
+#offer-form .card .card-body .messege.blue * {
+  color: #fff;
+}
+#offer-form .card .card-body .offer-form {
+  margin: 10px 0px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: rgba(233, 233, 233, 0.562);
+}
+#offer-form .card .card-body .offer-form h5 {
+  color: rgb(112, 112, 112);
+}
+#offer-form .card .card-body .offer-form i {
+  color: #3387b2;
+  font-size: 20px;
+  top: 10px;
+}
+#offer-form .card .card-body .offer-form input {
+  border-color: rgb(221, 221, 221);
+  color: rgb(112, 112, 112);
+  padding: 5px;
+}
+#offer-form .card .card-body .offer-form select {
+  border-color: rgb(221, 221, 221);
+  color: rgb(112, 112, 112);
+  padding: 10px 5px;
+}
+
+/*======================================================
 ======== Footer
 ======================================================*/
 .main-footer .social-style-one li {
@@ -178,9 +247,15 @@
 .main-footer hr {
   width: 70%;
   margin: 0px auto;
-  height: 2px;
-  background-color: rgb(179, 179, 179);
+  height: 1px;
+  background-color: rgba(216, 216, 216, 0.445);
   border-radius: 10px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .main-footer hr {
+    display: none;
+  }
 }
 
 /*=======================================================
